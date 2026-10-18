@@ -1,0 +1,100 @@
+---
+title: "Felipe Monte da Carvalheira Filho"
+subtitle: "Mathematics | Teaching Portfolio Résumé"
+---
+
+:::::::::::::: resume-page
+::: resume-lead
+**Future Mathematics Educator**
+
+Mathematics student and tutor focused on helping learners build confidence, make connections, and develop their own understanding.
+:::
+
+## Professional Profile
+
+I am a mathematics student preparing for a career in education, with tutoring experience in mathematics and physics. My background in mathematics has strengthened my appreciation for the connections between ideas, and I want students to experience mathematics as something they can explore and make sense of. I aim to create supportive learning environments where students feel comfortable asking questions, sharing ideas, and learning from mistakes.
+
+## Education
+
+::::: resume-grid
+::: resume-card
+### University of Florida
+
+**Bachelor of Science in Mathematics**, minor in Statistics\
+August 2024–Present · Gainesville, Florida
+:::
+
+::: resume-card
+### Miami Dade College
+
+**Associate of Arts in Mathematics**\
+January 2022–May 2024 · Miami, Florida
+
+GPA: **3.9** · Dean’s List recipient every semester
+:::
+:::::
+
+## Teaching and Professional Experience
+
+::: resume-entry
+### Private Mathematics and Physics Tutor
+
+**Gainesville, Florida** · November 2024–Present
+
+- Support students in mathematics and physics.
+- Work with learners from different age groups and backgrounds, including veterans and high school students.
+:::
+
+::: resume-entry
+### Part-Time Mathematics Tutor · Miami Dade College
+
+**Miami, Florida** · June 2022–July 2024
+
+- Provided one-to-one tutoring in algebra, calculus, and statistics.
+- Helped students prepare for exams and strengthen their understanding.
+- Developed customized learning plans based on individual student needs.
+:::
+
+## Research Experience
+
+::: resume-card
+### STEM Research · Miami Dade College
+
+**January 2023–May 2023** · Miami, Florida
+
+Researched risks associated with heavy-metal contamination from vaping devices. Compiled and analyzed data using statistical software and presented findings at student research symposiums.
+:::
+
+## Skills and Awards
+
+::::: resume-grid
+::: resume-card
+### Mathematics and Technology
+
+- **Mathematics:** Mathematics and statistics
+- **Programming:** Python and R · Skillful
+- **Productivity tools:** Microsoft Word, Excel, Teams, and PowerPoint · Experienced
+:::
+
+::: resume-card
+### Languages
+
+- **Portuguese:** Native
+- **Spanish:** Experienced
+- **English:** Experienced
+:::
+:::::
+
+::: resume-card
+### Awards and Achievements
+
+- Academic Excellence Award in Algebra, 2024
+- Academic Excellence Award Scholarship Program, 2023 and 2022
+- Pernambuco Mathematics Olympiad (OPEMAT), Brazil, 2019
+- Brazilian Mathematics Olympiad (OBM), gold medal, Brazil, 2018
+:::
+
+## Contact
+
+For professional inquiries, [email Felipe](mailto:felipemontefilho@hotmail.com).
+::::::::::::::

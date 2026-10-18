@@ -1,0 +1,726 @@
+/* Shared visual style for the mathematics teaching portfolio. */
+:root {
+  --portfolio-ink: #172b3a;
+  --portfolio-muted: #526575;
+  --portfolio-blue: #1f5c75;
+  --portfolio-blue-dark: #16465d;
+  --portfolio-teal: #a8d7cf;
+  --portfolio-paper: #f5f8f7;
+  --portfolio-line: #d9e4e4;
+  --portfolio-white: #ffffff;
+}
+
+body {
+  color: var(--portfolio-ink);
+  background: var(--portfolio-white);
+  font-size: 1.04rem;
+  line-height: 1.75;
+}
+
+.navbar {
+  border-bottom: 1px solid var(--portfolio-line);
+  box-shadow: 0 4px 18px rgb(23 43 58 / 5%);
+}
+
+.navbar-title {
+  color: var(--portfolio-ink);
+  font-weight: 750;
+  letter-spacing: -0.025em;
+}
+
+.navbar .nav-link {
+  font-weight: 600;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-link.active {
+  color: var(--portfolio-blue);
+}
+
+.quarto-title-block .quarto-title {
+  max-width: 850px;
+}
+
+.quarto-title-block h1.title {
+  color: var(--portfolio-ink);
+  font-size: clamp(2.35rem, 5vw, 3.7rem);
+  font-weight: 750;
+  letter-spacing: -0.045em;
+  line-height: 1.1;
+}
+
+.quarto-title-block .subtitle {
+  max-width: 720px;
+  color: var(--portfolio-muted);
+  font-size: clamp(1.1rem, 2.3vw, 1.35rem);
+  line-height: 1.5;
+}
+
+main.content {
+  padding-bottom: 3rem;
+}
+
+main.content h2 {
+  margin-top: 2.6rem;
+  color: var(--portfolio-ink);
+  font-size: clamp(1.55rem, 3vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+main.content h3 {
+  color: var(--portfolio-ink);
+  font-weight: 700;
+}
+
+a {
+  color: var(--portfolio-blue);
+  text-underline-offset: 0.18em;
+}
+
+a:hover {
+  color: var(--portfolio-blue-dark);
+}
+
+.home-intro {
+  max-width: 900px;
+  margin: 0 auto 2.5rem;
+  padding: clamp(1.5rem, 4vw, 2.75rem);
+  border: 1px solid var(--portfolio-line);
+  border-left: 5px solid var(--portfolio-teal);
+  border-radius: 0.9rem;
+  background: linear-gradient(135deg, var(--portfolio-paper), #fff 72%);
+  color: var(--portfolio-muted);
+  font-size: 1.12rem;
+}
+
+.home-intro p:last-child {
+  margin-bottom: 0;
+}
+
+.updates-box {
+  box-sizing: border-box;
+  max-width: 100%;
+  margin: 1.25rem 0 2.5rem;
+  padding: clamp(1rem, 3vw, 1.75rem);
+  border: 1px solid var(--portfolio-line);
+  border-radius: 0.9rem;
+  background: var(--portfolio-paper);
+  overflow-wrap: anywhere;
+}
+
+/* Keep the update timeline compact when it sits in Quarto's page margin. */
+.updates-box.column-margin {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 1.1rem;
+  font-size: 0.94rem;
+}
+
+.updates-box h2 {
+  margin: 0 0 1rem;
+  font-size: clamp(1.35rem, 2vw, 1.65rem);
+  line-height: 1.2;
+}
+
+.updates-box .update-entry {
+  display: block !important;
+  width: 100%;
+  min-width: 0;
+  padding: 1rem 0;
+}
+
+.updates-box .update-date {
+  display: inline-block;
+  width: fit-content;
+  margin: 0 0 0.55rem;
+  padding: 0 0 0.3rem;
+  border-right: 0;
+  border-bottom: 2px solid var(--portfolio-teal);
+  font-size: 0.78rem;
+}
+
+.updates-box .update-content {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.updates-box .update-content strong {
+  font-size: 1rem;
+}
+
+.updates-box .update-content p {
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+.update-entry {
+  display: grid;
+  grid-template-columns: minmax(130px, 180px) minmax(0, 1fr);
+  gap: 1.5rem;
+  padding: 1.35rem 0;
+  border-bottom: 1px solid var(--portfolio-line);
+}
+
+.update-entry:first-child {
+  padding-top: 0.25rem;
+}
+
+.update-entry:last-child {
+  padding-bottom: 0.25rem;
+  border-bottom: 0;
+}
+
+.update-date {
+  align-self: start;
+  padding: 0.1rem 1.2rem 0.1rem 0;
+  border-right: 2px solid var(--portfolio-teal);
+  color: var(--portfolio-blue);
+  font-size: 0.88rem;
+  font-weight: 750;
+  letter-spacing: 0.055em;
+}
+
+.update-content strong {
+  color: var(--portfolio-ink);
+  font-size: 1.08rem;
+}
+
+.update-content p {
+  margin: 0.3rem 0 0;
+  color: var(--portfolio-muted);
+}
+
+.portfolio-card {
+  margin: 1.25rem 0 2rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid var(--portfolio-line);
+  border-radius: 0.9rem;
+  background: var(--portfolio-white);
+  box-shadow: 0 12px 32px rgb(23 43 58 / 6%);
+}
+
+.portfolio-card h3 {
+  margin-top: 0;
+}
+
+.portfolio-card p:last-child,
+.portfolio-card ul:last-child,
+.portfolio-card ol:last-child {
+  margin-bottom: 0;
+}
+
+/* Résumé page */
+.resume-page {
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.resume-page > h2 {
+  margin-top: 3rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--portfolio-line);
+}
+
+.resume-lead {
+  margin: 1rem 0 2.25rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid var(--portfolio-line);
+  border-left: 5px solid var(--portfolio-teal);
+  border-radius: 0.9rem;
+  background: linear-gradient(135deg, var(--portfolio-paper), #fff 80%);
+  color: var(--portfolio-muted);
+  font-size: 1.12rem;
+}
+
+.resume-lead p {
+  margin-bottom: 0;
+}
+
+.resume-lead p:first-child {
+  margin-bottom: 0.45rem;
+  color: var(--portfolio-blue);
+  font-size: 0.82rem;
+  font-weight: 750;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.resume-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0 2rem;
+}
+
+.resume-grid > .resume-card {
+  margin: 0;
+}
+
+.resume-card,
+.resume-entry {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.resume-card {
+  margin: 1rem 0 1.25rem;
+  padding: clamp(1.1rem, 2.5vw, 1.5rem);
+  border: 1px solid var(--portfolio-line);
+  border-radius: 0.85rem;
+  background: var(--portfolio-paper);
+}
+
+.resume-card h3,
+.resume-entry h3 {
+  margin-top: 0;
+  margin-bottom: 0.45rem;
+  font-size: 1.15rem;
+}
+
+.resume-card p:last-child,
+.resume-entry p:last-child,
+.resume-entry ul:last-child {
+  margin-bottom: 0;
+}
+
+.resume-entry {
+  margin: 1.4rem 0 1.5rem 0.35rem;
+  padding: 0.1rem 0 0.2rem 1.25rem;
+  border-left: 3px solid var(--portfolio-teal);
+}
+
+.resume-entry > p:first-of-type {
+  color: var(--portfolio-blue);
+  font-size: 0.92rem;
+  font-weight: 650;
+}
+
+.resume-entry ul {
+  padding-left: 1.2rem;
+}
+
+.resume-entry li + li {
+  margin-top: 0.25rem;
+}
+
+.resume-page a {
+  font-weight: 650;
+}
+
+/* Coordinate-plane rotation activity */
+.rotation-tool {
+  max-width: 850px;
+  margin: 1.5rem auto 2rem;
+  color: var(--portfolio-ink);
+}
+
+.rotation-angle-control {
+  margin: 1rem 0 1.4rem;
+}
+
+.rotation-center-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 1rem 0;
+  padding: 0.8rem 1rem;
+  border: 1px solid var(--portfolio-line);
+  border-radius: 0.65rem;
+}
+
+.rotation-center-controls legend {
+  float: none;
+  width: auto;
+  margin: 0;
+  padding: 0 0.35rem;
+  color: var(--portfolio-ink);
+  font-size: 0.98rem;
+  font-weight: 750;
+}
+
+.rotation-center-controls label {
+  font-weight: 700;
+}
+
+.rotation-center-controls input[type="number"] {
+  width: 4.5rem;
+  min-height: 2.5rem;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid var(--portfolio-line);
+  border-radius: 0.35rem;
+  color: var(--portfolio-ink);
+  background: var(--portfolio-white);
+}
+
+.rotation-center-controls .btn {
+  min-height: 2.5rem;
+}
+
+.rotation-current-center {
+  color: var(--portfolio-muted);
+  font-size: 0.92rem;
+}
+
+.rotation-current-center output {
+  color: var(--portfolio-blue-dark);
+  font-weight: 750;
+  font-variant-numeric: tabular-nums;
+}
+
+.rotation-angle-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.35rem;
+  font-weight: 650;
+}
+
+.rotation-angle-heading output {
+  color: var(--portfolio-blue);
+  font-variant-numeric: tabular-nums;
+  font-size: 1.2rem;
+  font-weight: 750;
+}
+
+#rotation-angle {
+  display: block;
+  width: 100%;
+  accent-color: #c74343;
+}
+
+.rotation-distance-toggle {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  width: fit-content;
+  margin: 0.25rem 0 1rem;
+  color: var(--portfolio-ink);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.rotation-distance-toggle input {
+  width: 1.15rem;
+  height: 1.15rem;
+  margin-top: 0.3rem;
+  accent-color: var(--portfolio-blue);
+}
+
+.rotation-distance-panel[hidden] {
+  display: none !important;
+}
+
+.rotation-distance-panel {
+  margin: 0 0 1.5rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--portfolio-line);
+  border-radius: 0.7rem;
+  background: var(--portfolio-paper);
+}
+
+.rotation-distance-panel h3 {
+  margin: 0 0 0.3rem;
+  color: var(--portfolio-ink);
+  font-size: 1.08rem;
+}
+
+.rotation-distance-panel p {
+  margin: 0 0 0.75rem;
+  color: var(--portfolio-muted);
+  font-size: 0.92rem;
+}
+
+.rotation-distance-table-wrap {
+  overflow-x: auto;
+  margin: 0.75rem 0;
+}
+
+.rotation-distance-table {
+  width: 100%;
+  min-width: 580px;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.rotation-distance-table th,
+.rotation-distance-table td {
+  padding: 0.45rem 0.6rem;
+  border-bottom: 1px solid var(--portfolio-line);
+  text-align: center;
+}
+
+.rotation-distance-table th {
+  color: var(--portfolio-ink);
+  font-weight: 750;
+}
+
+.rotation-distance-table td:first-child {
+  font-weight: 750;
+}
+
+.rotation-distance-table-note,
+.rotation-distance-panel .rotation-distance-note {
+  margin-bottom: 0;
+  font-size: 0.86rem;
+}
+
+.rotation-distance-guide {
+  stroke-dasharray: 4 4;
+  stroke-width: 1.7;
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.original-distance-guide {
+  stroke: var(--portfolio-blue-dark);
+}
+
+.rotated-distance-guide {
+  stroke: #c74343;
+}
+
+.rotation-point-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.55rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.rotation-point-controls .rotation-instruction {
+  flex-basis: 100%;
+  margin: 0 0 0.2rem;
+  color: var(--portfolio-muted);
+}
+
+.rotation-point-controls label {
+  font-weight: 700;
+}
+
+.rotation-point-controls input[type="number"] {
+  width: 4.5rem;
+  min-height: 2.5rem;
+  padding: 0.35rem 0.5rem;
+  border: 1px solid var(--portfolio-line);
+  border-radius: 0.35rem;
+  color: var(--portfolio-ink);
+  background: var(--portfolio-white);
+}
+
+.rotation-point-controls .btn {
+  min-height: 2.5rem;
+}
+
+.rotation-status {
+  min-height: 1.5rem;
+  margin: 0.75rem 0;
+  color: var(--portfolio-muted);
+  font-size: 0.93rem;
+}
+
+.rotation-canvas {
+  display: block;
+  width: 100%;
+  max-width: 680px;
+  height: auto;
+  margin: 0 auto;
+  touch-action: manipulation;
+}
+
+.rotation-tool.is-picking-center .rotation-canvas {
+  cursor: crosshair;
+}
+
+.rotation-grid-line {
+  stroke: var(--portfolio-line);
+  stroke-width: 0.8;
+}
+
+.rotation-grid-line.major {
+  stroke-width: 1.1;
+}
+
+.rotation-axis {
+  stroke: var(--portfolio-muted);
+  stroke-width: 1.7;
+}
+
+.rotation-grid-label,
+.rotation-axis-label {
+  fill: var(--portfolio-muted);
+  font-family: inherit;
+  font-size: calc(13px * var(--rotation-text-scale, 1));
+}
+
+.rotation-axis-label {
+  fill: var(--portfolio-ink);
+  font-size: calc(15px * var(--rotation-text-scale, 1));
+  font-weight: 700;
+}
+
+.rotation-original-shape {
+  fill: color-mix(in srgb, var(--portfolio-teal) 32%, transparent);
+  stroke: var(--portfolio-blue-dark);
+  stroke-width: 2.5;
+  stroke-linejoin: round;
+}
+
+.rotation-rotated-shape {
+  fill: color-mix(in srgb, #c74343 24%, transparent);
+  stroke: #c74343;
+  stroke-width: 2.5;
+  stroke-linejoin: round;
+}
+
+.rotation-original-marker {
+  fill: var(--portfolio-teal);
+  stroke: var(--portfolio-blue-dark);
+  stroke-width: 1.5;
+}
+
+.rotation-rotated-marker {
+  fill: #c74343;
+  stroke: var(--portfolio-white);
+  stroke-width: 1.5;
+}
+
+.rotation-center-marker {
+  fill: var(--portfolio-white);
+  stroke: var(--portfolio-blue-dark);
+  stroke-width: 2.5;
+}
+
+.rotation-center-crosshair {
+  stroke: var(--portfolio-blue-dark);
+  stroke-width: 1.5;
+  pointer-events: none;
+}
+
+.rotation-center-label {
+  fill: var(--portfolio-blue-dark);
+  font-family: inherit;
+  font-size: calc(15px * var(--rotation-text-scale, 1));
+  font-weight: 800;
+  paint-order: stroke;
+  stroke: var(--portfolio-white);
+  stroke-width: 3px;
+  stroke-linejoin: round;
+}
+
+.rotation-original-label,
+.rotation-rotated-label {
+  fill: var(--portfolio-ink);
+  font-family: inherit;
+  font-size: calc(14px * var(--rotation-text-scale, 1));
+  font-weight: 700;
+  paint-order: stroke;
+  stroke: var(--portfolio-white);
+  stroke-width: 3px;
+  stroke-linejoin: round;
+}
+
+.rotation-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1.5rem;
+  margin: 0.25rem 0 1.5rem;
+  color: var(--portfolio-muted);
+  font-size: 0.92rem;
+}
+
+.rotation-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.rotation-legend-mark {
+  width: 0.9rem;
+  height: 0.9rem;
+  border: 2px solid var(--portfolio-blue-dark);
+  background: color-mix(in srgb, var(--portfolio-teal) 45%, transparent);
+}
+
+.rotation-legend-mark.rotated {
+  border-color: #c74343;
+  background: color-mix(in srgb, #c74343 40%, transparent);
+}
+
+.rotation-readout {
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.rotation-readout h3 {
+  margin-bottom: 0.25rem;
+  color: var(--portfolio-ink);
+  font-size: 1.1rem;
+}
+
+.rotation-readout p {
+  margin-bottom: 0.5rem;
+  color: var(--portfolio-muted);
+  font-size: 0.92rem;
+}
+
+#rotation-coordinates {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 0.2rem 1.25rem;
+  margin: 0;
+  padding-left: 1.35rem;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 575.98px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .update-entry {
+    grid-template-columns: 1fr;
+    gap: 0.65rem;
+  }
+
+  .update-date {
+    width: fit-content;
+    padding: 0 0 0.35rem;
+    border-right: 0;
+    border-bottom: 2px solid var(--portfolio-teal);
+  }
+
+  .resume-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-entry {
+    margin-left: 0;
+    padding-left: 1rem;
+  }
+
+  .rotation-point-controls .btn {
+    flex: 1 1 auto;
+  }
+
+  .rotation-center-controls .btn {
+    flex: 1 1 auto;
+  }
+
+}
+
+@media (pointer: coarse) {
+  .rotation-point-controls input[type="number"],
+  .rotation-point-controls .btn,
+  .rotation-center-controls input[type="number"],
+  .rotation-center-controls .btn {
+    min-height: 2.75rem;
+  }
+}

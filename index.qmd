@@ -1,0 +1,47 @@
+---
+title: "Welcome!"
+subtitle: "My Teaching Philosophy and Educational Journey"
+page-layout: article
+---
+
+::: home-intro
+Welcome to my teaching website! This is a space where I share my teaching philosophy, educational resources, classroom activities, and reflections on my development as an educator.
+
+My goal is to create meaningful learning experiences that encourage students to explore ideas, ask questions, make connections, and develop confidence in their mathematical abilities. I hope this website provides a glimpse into my approach to teaching and my commitment to helping every student learn.
+:::
+
+::: {.column-margin .updates-box}
+## What's New?
+
+```{=html}
+<div class="update-entry">
+  <div class="update-date">OCT 22, 2026</div>
+  <div class="update-content">
+    <strong>First lesson added</strong>
+    <p>Published a lesson with resources and activities for students.</p>
+  </div>
+</div>
+
+<div class="update-entry">
+  <div class="update-date">OCT 18, 2026</div>
+  <div class="update-content">
+    <strong>Website launched</strong>
+    <p>Created the homepage and introduced my teaching philosophy.</p>
+  </div>
+</div>
+```
+:::
+
+## Teaching Philosophy
+
+I believe students develop a lasting understanding of mathematics when they actively explore ideas and make connections, rather than simply receive answers or memorize procedures. I want students to feel comfortable asking questions, sharing their thinking, making mistakes, and building models as they work toward their own understanding. Visualization, discussion, hands-on activities, and mathematical construction can each offer a different way into an idea.
+
+My approach also needs to be flexible. I aim to respond to students’ interests, questions, and needs while providing the guidance and structure that keep learning focused. I see reflection as part of that work: revising lessons, improving explanations, addressing misconceptions, and learning from mistakes help me find better ways to support students.
+
+## My Role as a Teacher
+
+My role is to create these connections while providing enough structure and guidance to keep students moving toward meaningful understanding. At the same time, I recognize that effective teaching requires constant reflection. I want to hold myself to high standards by carefully revising my lessons, thinking about the language I use, responding to students' misconceptions, and learning from my mistakes. I believe becoming a better teacher is a continuous process, and through consistency, preparation, and a willingness to learn alongside my students, I hope to create a classroom where students feel confident exploring mathematics and developing their own understanding.
+
+## Explore the portfolio
+
+Use the navigation above to explore my teaching profile, lesson plans, classroom reflections, and educational resources. These sections will grow as I develop and document my practice.

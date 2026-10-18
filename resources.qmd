@@ -1,0 +1,27 @@
+---
+title: "Educational Resources"
+subtitle: "Activities, tools, and references for learning mathematics"
+---
+
+Collect useful resources here and add a short note about how each one supports learning. Include a working link and any relevant grade level or mathematics topic.
+
+## Resource collection
+
+::: {.portfolio-card}
+### Resource title
+
+*Type:* Activity, handout, tool, or reference  
+*Grade or topic:* Add the intended audience or mathematics topic
+
+**How it supports learning**
+
+Explain how students might use this resource to explore an idea, represent their thinking, or make a connection.
+
+**Link or file**
+
+Add a link or identify the file when you have a resource to share.
+:::
+
+## Organizing resources
+
+As the collection grows, group entries by topic, grade level, or purpose. Check that shared links work and that any files are appropriate to publish publicly.

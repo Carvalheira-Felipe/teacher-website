@@ -1,0 +1,30 @@
+---
+title: "Classroom Practice"
+subtitle: "Experiences, reflection, and growth as an educator"
+---
+
+This page is a space to document classroom experiences and reflect on how students learn. Add entries over time, keeping student privacy in mind and leaving out identifying details.
+
+## Reflection notes
+
+::: {.portfolio-card}
+### Reflection title
+
+*Date or teaching context:* Add a date or general context without identifying students.
+
+**What happened?**
+
+Describe the activity, student thinking, or teaching moment.
+
+**What did I notice?**
+
+Record questions, strategies, connections, or misconceptions that stood out.
+
+**What might I change next time?**
+
+Note a specific adjustment to the lesson, your explanations, or the support you provide.
+:::
+
+## A reflective practice
+
+Use these notes to identify patterns, revise lessons, and consider how different representations or activities can help students make sense of mathematics.
