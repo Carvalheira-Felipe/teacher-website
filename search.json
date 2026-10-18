@@ -1,0 +1,163 @@
+[
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Educational Resources",
+    "section": "",
+    "text": "Collect useful resources here and add a short note about how each one supports learning. Include a working link and any relevant grade level or mathematics topic."
+  },
+  {
+    "objectID": "resources.html#resource-collection",
+    "href": "resources.html#resource-collection",
+    "title": "Educational Resources",
+    "section": "Resource collection",
+    "text": "Resource collection\n\nResource title\nType: Activity, handout, tool, or reference\nGrade or topic: Add the intended audience or mathematics topic\nHow it supports learning\nExplain how students might use this resource to explore an idea, represent their thinking, or make a connection.\nLink or file\nAdd a link or identify the file when you have a resource to share."
+  },
+  {
+    "objectID": "resources.html#organizing-resources",
+    "href": "resources.html#organizing-resources",
+    "title": "Educational Resources",
+    "section": "Organizing resources",
+    "text": "Organizing resources\nAs the collection grows, group entries by topic, grade level, or purpose. Check that shared links work and that any files are appropriate to publish publicly."
+  },
+  {
+    "objectID": "lessons.html",
+    "href": "lessons.html",
+    "title": "Rotations on the Coordinate Plane",
+    "section": "",
+    "text": "In this lesson, you will build a convex polygon on a coordinate grid, choose its center of rotation, and explore how each vertex moves as you adjust the angle from −360° to 360°."
+  },
+  {
+    "objectID": "lessons.html#interactive-rotation-tool",
+    "href": "lessons.html#interactive-rotation-tool",
+    "title": "Rotations on the Coordinate Plane",
+    "section": "Interactive rotation tool",
+    "text": "Interactive rotation tool\nClick grid intersections to add vertices in order around the polygon’s boundary. After the third point, the polygon closes automatically. Points that would make it concave or self-crossing are not added. Choose the rotation center on the grid or enter its coordinates.\n\n  \n    Center of rotation\n    x\n    \n    y\n    \n    Set center\n    Choose center on grid\n    Current center: (0, 0)\n  \n\n  \n    Add polygon vertices in boundary order, or enter integer coordinates:\n    x\n    \n    y\n    \n    Add point\n    Undo last point\n    Clear shape\n  \n\n  Add at least three vertices to create a convex polygon. Original vertices and the center can be placed from −8 to 8 on each axis.\n\n  \n    Coordinate grid for rotating a polygon\n    Click an intersection in the central grid to add a vertex or choose the center of rotation. The graph expands as needed to show the rotated image.\n    \n    \n    \n    \n  \n\n  \n    \n      Rotation angle\n      0°\n    \n    \n  \n\n  \n    \n    Show distances to the x- and y-axes\n  \n\n  \n    Distances from the axes\n    Distance to the y-axis is |x|; distance to the x-axis is |y|. The dashed guides show these distances for each original vertex and its image.\n    \n      \n\n\n\nVertex\nOriginal: to y-axis\nOriginal: to x-axis\nImage: to y-axis\nImage: to x-axis\n\n\n\n\n\n\n    \n    With the center at the origin, 90° and 270° rotations swap the x- and y-distances, while a 180° rotation keeps them on their respective axes. If the center is elsewhere, distances to the coordinate axes are not generally preserved.\n  \n\n  \n    Original polygon\n    Rotated image\n  \n\n  \n    Vertex coordinates\n    Compare each original vertex with its image after rotation.\n    \n  \n\n\nThis interactive tool needs JavaScript enabled in your browser."
+  },
+  {
+    "objectID": "lessons.html#what-to-notice",
+    "href": "lessons.html#what-to-notice",
+    "title": "Rotations on the Coordinate Plane",
+    "section": "What to notice",
+    "text": "What to notice\nA rotation turns every point through the same angle about a fixed center. In this tool, you choose the center \\((h,k)\\). Each vertex stays the same distance from that center, and the polygon keeps its side lengths and angle measures.\nFor a counterclockwise rotation by θ degrees around \\((h,k)\\), transform each point using:\nx′ = h + (x − h) cos θ − (y − k) sin θ\ny′ = k + (x − h) sin θ + (y − k) cos θ"
+  },
+  {
+    "objectID": "lessons.html#explore",
+    "href": "lessons.html#explore",
+    "title": "Rotations on the Coordinate Plane",
+    "section": "Explore",
+    "text": "Explore\n\nPlot a triangle, then rotate it by 90°. Compare the original and image coordinates. What pattern do you notice?\nTry 180°, −90°, and 270°. Which rotations produce the same image? Explain why.\nRotate your polygon by 360° and −360°. What happens to each vertex?\nPredict the image of one vertex before moving the slider, then use the graph to check your prediction."
+  },
+  {
+    "objectID": "lessons.html#learning-goals",
+    "href": "lessons.html#learning-goals",
+    "title": "Rotations on the Coordinate Plane",
+    "section": "Learning goals",
+    "text": "Learning goals\n\nPlot and identify vertices of a polygon on the coordinate plane.\nDescribe and model a rotation by its angle and center.\nCompare coordinates before and after a rotation and explain how the transformation preserves distance and angle measure."
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Felipe Monte da Carvalheira Filho",
+    "section": "",
+    "text": "Future Mathematics Educator\nMathematics student and tutor focused on helping learners build confidence, make connections, and develop their own understanding.\n\n\n\nI am a mathematics student preparing for a career in education, with tutoring experience in mathematics and physics. My background in mathematics has strengthened my appreciation for the connections between ideas, and I want students to experience mathematics as something they can explore and make sense of. I aim to create supportive learning environments where students feel comfortable asking questions, sharing ideas, and learning from mistakes.\n\n\n\n\n\n\nBachelor of Science in Mathematics, minor in Statistics\nAugust 2024–Present · Gainesville, Florida\n\n\n\nAssociate of Arts in Mathematics\nJanuary 2022–May 2024 · Miami, Florida\nGPA: 3.9 · Dean’s List recipient every semester\n\n\n\n\n\n\n\nGainesville, Florida · November 2024–Present\n\nSupport students in mathematics and physics.\nWork with learners from different age groups and backgrounds, including veterans and high school students.\n\n\n\n\nMiami, Florida · June 2022–July 2024\n\nProvided one-to-one tutoring in algebra, calculus, and statistics.\nHelped students prepare for exams and strengthen their understanding.\nDeveloped customized learning plans based on individual student needs.\n\n\n\n\n\n\n\nJanuary 2023–May 2023 · Miami, Florida\nResearched risks associated with heavy-metal contamination from vaping devices. Compiled and analyzed data using statistical software and presented findings at student research symposiums.\n\n\n\n\n\n\n\n\nMathematics: Mathematics and statistics\nProgramming: Python and R · Skillful\nProductivity tools: Microsoft Word, Excel, Teams, and PowerPoint · Experienced\n\n\n\n\n\nPortuguese: Native\nSpanish: Experienced\nEnglish: Experienced\n\n\n\n\n\n\nAcademic Excellence Award in Algebra, 2024\nAcademic Excellence Award Scholarship Program, 2023 and 2022\nPernambuco Mathematics Olympiad (OPEMAT), Brazil, 2019\nBrazilian Mathematics Olympiad (OBM), gold medal, Brazil, 2018\n\n\n\n\n\nFor professional inquiries, email Felipe."
+  },
+  {
+    "objectID": "resume.html#professional-profile",
+    "href": "resume.html#professional-profile",
+    "title": "Felipe Monte da Carvalheira Filho",
+    "section": "",
+    "text": "I am a mathematics student preparing for a career in education, with tutoring experience in mathematics and physics. My background in mathematics has strengthened my appreciation for the connections between ideas, and I want students to experience mathematics as something they can explore and make sense of. I aim to create supportive learning environments where students feel comfortable asking questions, sharing ideas, and learning from mistakes."
+  },
+  {
+    "objectID": "resume.html#education",
+    "href": "resume.html#education",
+    "title": "Felipe Monte da Carvalheira Filho",
+    "section": "",
+    "text": "Bachelor of Science in Mathematics, minor in Statistics\nAugust 2024–Present · Gainesville, Florida\n\n\n\nAssociate of Arts in Mathematics\nJanuary 2022–May 2024 · Miami, Florida\nGPA: 3.9 · Dean’s List recipient every semester"
+  },
+  {
+    "objectID": "resume.html#teaching-and-professional-experience",
+    "href": "resume.html#teaching-and-professional-experience",
+    "title": "Felipe Monte da Carvalheira Filho",
+    "section": "",
+    "text": "Gainesville, Florida · November 2024–Present\n\nSupport students in mathematics and physics.\nWork with learners from different age groups and backgrounds, including veterans and high school students.\n\n\n\n\nMiami, Florida · June 2022–July 2024\n\nProvided one-to-one tutoring in algebra, calculus, and statistics.\nHelped students prepare for exams and strengthen their understanding.\nDeveloped customized learning plans based on individual student needs."
+  },
+  {
+    "objectID": "resume.html#research-experience",
+    "href": "resume.html#research-experience",
+    "title": "Felipe Monte da Carvalheira Filho",
+    "section": "",
+    "text": "January 2023–May 2023 · Miami, Florida\nResearched risks associated with heavy-metal contamination from vaping devices. Compiled and analyzed data using statistical software and presented findings at student research symposiums."
+  },
+  {
+    "objectID": "resume.html#skills-and-awards",
+    "href": "resume.html#skills-and-awards",
+    "title": "Felipe Monte da Carvalheira Filho",
+    "section": "",
+    "text": "Mathematics: Mathematics and statistics\nProgramming: Python and R · Skillful\nProductivity tools: Microsoft Word, Excel, Teams, and PowerPoint · Experienced\n\n\n\n\n\nPortuguese: Native\nSpanish: Experienced\nEnglish: Experienced\n\n\n\n\n\n\nAcademic Excellence Award in Algebra, 2024\nAcademic Excellence Award Scholarship Program, 2023 and 2022\nPernambuco Mathematics Olympiad (OPEMAT), Brazil, 2019\nBrazilian Mathematics Olympiad (OBM), gold medal, Brazil, 2018"
+  },
+  {
+    "objectID": "resume.html#contact",
+    "href": "resume.html#contact",
+    "title": "Felipe Monte da Carvalheira Filho",
+    "section": "",
+    "text": "For professional inquiries, email Felipe."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome!",
+    "section": "",
+    "text": "Welcome to my teaching website! This is a space where I share my teaching philosophy, educational resources, classroom activities, and reflections on my development as an educator.\nMy goal is to create meaningful learning experiences that encourage students to explore ideas, ask questions, make connections, and develop confidence in their mathematical abilities. I hope this website provides a glimpse into my approach to teaching and my commitment to helping every student learn."
+  },
+  {
+    "objectID": "index.html#whats-new",
+    "href": "index.html#whats-new",
+    "title": "Welcome!",
+    "section": "What’s New?",
+    "text": "What’s New?\n\n  OCT 22, 2026\n  \n    First lesson added\n    Published a lesson with resources and activities for students.\n  \n\n\n\n  OCT 18, 2026\n  \n    Website launched\n    Created the homepage and introduced my teaching philosophy."
+  },
+  {
+    "objectID": "index.html#teaching-philosophy",
+    "href": "index.html#teaching-philosophy",
+    "title": "Welcome!",
+    "section": "Teaching Philosophy",
+    "text": "Teaching Philosophy\nI believe students develop a lasting understanding of mathematics when they actively explore ideas and make connections, rather than simply receive answers or memorize procedures. I want students to feel comfortable asking questions, sharing their thinking, making mistakes, and building models as they work toward their own understanding. Visualization, discussion, hands-on activities, and mathematical construction can each offer a different way into an idea.\nMy approach also needs to be flexible. I aim to respond to students’ interests, questions, and needs while providing the guidance and structure that keep learning focused. I see reflection as part of that work: revising lessons, improving explanations, addressing misconceptions, and learning from mistakes help me find better ways to support students."
+  },
+  {
+    "objectID": "index.html#my-role-as-a-teacher",
+    "href": "index.html#my-role-as-a-teacher",
+    "title": "Welcome!",
+    "section": "My Role as a Teacher",
+    "text": "My Role as a Teacher\nMy role is to create these connections while providing enough structure and guidance to keep students moving toward meaningful understanding. At the same time, I recognize that effective teaching requires constant reflection. I want to hold myself to high standards by carefully revising my lessons, thinking about the language I use, responding to students’ misconceptions, and learning from my mistakes. I believe becoming a better teacher is a continuous process, and through consistency, preparation, and a willingness to learn alongside my students, I hope to create a classroom where students feel confident exploring mathematics and developing their own understanding."
+  },
+  {
+    "objectID": "index.html#explore-the-portfolio",
+    "href": "index.html#explore-the-portfolio",
+    "title": "Welcome!",
+    "section": "Explore the portfolio",
+    "text": "Explore the portfolio\nUse the navigation above to explore my teaching profile, lesson plans, classroom reflections, and educational resources. These sections will grow as I develop and document my practice."
+  },
+  {
+    "objectID": "classroom.html",
+    "href": "classroom.html",
+    "title": "Classroom Practice",
+    "section": "",
+    "text": "This page is a space to document classroom experiences and reflect on how students learn. Add entries over time, keeping student privacy in mind and leaving out identifying details."
+  },
+  {
+    "objectID": "classroom.html#reflection-notes",
+    "href": "classroom.html#reflection-notes",
+    "title": "Classroom Practice",
+    "section": "Reflection notes",
+    "text": "Reflection notes\n\nReflection title\nDate or teaching context: Add a date or general context without identifying students.\nWhat happened?\nDescribe the activity, student thinking, or teaching moment.\nWhat did I notice?\nRecord questions, strategies, connections, or misconceptions that stood out.\nWhat might I change next time?\nNote a specific adjustment to the lesson, your explanations, or the support you provide."
+  },
+  {
+    "objectID": "classroom.html#a-reflective-practice",
+    "href": "classroom.html#a-reflective-practice",
+    "title": "Classroom Practice",
+    "section": "A reflective practice",
+    "text": "A reflective practice\nUse these notes to identify patterns, revise lessons, and consider how different representations or activities can help students make sense of mathematics."
+  }
+]
