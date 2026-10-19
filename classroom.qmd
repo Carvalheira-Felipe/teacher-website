@@ -1,6 +1,7 @@
 ---
 title: "Classroom Practice"
 subtitle: "Experiences, reflection, and growth as an educator"
+search: false
 ---
 
 This page is a space to document classroom experiences and reflect on how students learn. Add entries over time, keeping student privacy in mind and leaving out identifying details.

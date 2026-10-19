@@ -1,6 +1,7 @@
 ---
 title: "Educational Resources"
 subtitle: "Activities, tools, and references for learning mathematics"
+search: false
 ---
 
 Collect useful resources here and add a short note about how each one supports learning. Include a working link and any relevant grade level or mathematics topic.
