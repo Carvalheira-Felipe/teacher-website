@@ -1,47 +1,5 @@
 [
   {
-    "objectID": "resources.html",
-    "href": "resources.html",
-    "title": "Educational Resources",
-    "section": "",
-    "text": "Collect useful resources here and add a short note about how each one supports learning. Include a working link and any relevant grade level or mathematics topic."
-  },
-  {
-    "objectID": "resources.html#resource-collection",
-    "href": "resources.html#resource-collection",
-    "title": "Educational Resources",
-    "section": "Resource collection",
-    "text": "Resource collection\n\nResource title\nType: Activity, handout, tool, or reference\nGrade or topic: Add the intended audience or mathematics topic\nHow it supports learning\nExplain how students might use this resource to explore an idea, represent their thinking, or make a connection.\nLink or file\nAdd a link or identify the file when you have a resource to share."
-  },
-  {
-    "objectID": "resources.html#organizing-resources",
-    "href": "resources.html#organizing-resources",
-    "title": "Educational Resources",
-    "section": "Organizing resources",
-    "text": "Organizing resources\nAs the collection grows, group entries by topic, grade level, or purpose. Check that shared links work and that any files are appropriate to publish publicly."
-  },
-  {
-    "objectID": "classroom.html",
-    "href": "classroom.html",
-    "title": "Classroom Practice",
-    "section": "",
-    "text": "This page is a space to document classroom experiences and reflect on how students learn. Add entries over time, keeping student privacy in mind and leaving out identifying details."
-  },
-  {
-    "objectID": "classroom.html#reflection-notes",
-    "href": "classroom.html#reflection-notes",
-    "title": "Classroom Practice",
-    "section": "Reflection notes",
-    "text": "Reflection notes\n\nReflection title\nDate or teaching context: Add a date or general context without identifying students.\nWhat happened?\nDescribe the activity, student thinking, or teaching moment.\nWhat did I notice?\nRecord questions, strategies, connections, or misconceptions that stood out.\nWhat might I change next time?\nNote a specific adjustment to the lesson, your explanations, or the support you provide."
-  },
-  {
-    "objectID": "classroom.html#a-reflective-practice",
-    "href": "classroom.html#a-reflective-practice",
-    "title": "Classroom Practice",
-    "section": "A reflective practice",
-    "text": "A reflective practice\nUse these notes to identify patterns, revise lessons, and consider how different representations or activities can help students make sense of mathematics."
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Welcome!",
