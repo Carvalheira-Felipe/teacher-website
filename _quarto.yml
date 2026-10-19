@@ -2,6 +2,10 @@ project:
   type: website
   resources:
     - rotation-tool.js
+    - dilation-tool.js
+    - lessons-dashboard.js
+    - images/lessons/rotation-thumbnail.avif
+    - images/lessons/dilation-1.png
 
 website:
   title: "Teacher Website"
@@ -13,10 +17,6 @@ website:
         text: About
       - href: lessons.qmd
         text: Lessons
-      - href: classroom.qmd
-        text: Classroom
-      - href: resources.qmd
-        text: Resources
 
 format:
   html:

@@ -1,115 +1,50 @@
 ---
-title: "Rotations on the Coordinate Plane"
-subtitle: "An interactive high-school geometry lesson"
+title: "Lessons"
+subtitle: "Explore interactive mathematics lessons and classroom-ready resources."
 ---
 
-In this lesson, you will build a convex polygon on a coordinate grid, choose its center of rotation, and explore how each vertex moves as you adjust the angle from −360° to 360°.
-
-## Interactive rotation tool
-
-Click grid intersections to add vertices in order around the polygon’s boundary. After the third point, the polygon closes automatically. Points that would make it concave or self-crossing are not added. Choose the rotation center on the grid or enter its coordinates.
-
 ```{=html}
-<div id="rotation-tool" class="rotation-tool" role="group" aria-label="Polygon rotation tool">
-  <fieldset class="rotation-center-controls">
-    <legend>Center of rotation</legend>
-    <label for="center-x">x</label>
-    <input id="center-x" type="number" min="-8" max="8" step="1" value="0">
-    <label for="center-y">y</label>
-    <input id="center-y" type="number" min="-8" max="8" step="1" value="0">
-    <button id="set-center" type="button" class="btn btn-outline-secondary">Set center</button>
-    <button id="choose-center" type="button" class="btn btn-outline-secondary" aria-pressed="false">Choose center on grid</button>
-    <span class="rotation-current-center">Current center: <output id="rotation-center-value">(0, 0)</output></span>
-  </fieldset>
-
-  <div class="rotation-point-controls">
-    <p class="rotation-instruction">Add polygon vertices in boundary order, or enter integer coordinates:</p>
-    <label for="vertex-x">x</label>
-    <input id="vertex-x" type="number" min="-8" max="8" step="1" value="1">
-    <label for="vertex-y">y</label>
-    <input id="vertex-y" type="number" min="-8" max="8" step="1" value="1">
-    <button id="add-vertex" type="button" class="btn btn-outline-secondary">Add point</button>
-    <button id="undo-vertex" type="button" class="btn btn-outline-secondary" disabled>Undo last point</button>
-    <button id="clear-vertices" type="button" class="btn btn-outline-secondary" disabled>Clear shape</button>
-  </div>
-
-  <p id="rotation-status" class="rotation-status" aria-live="polite">Add at least three vertices to create a convex polygon. Original vertices and the center can be placed from −8 to 8 on each axis.</p>
-
-  <svg class="rotation-canvas" viewBox="0 0 640 640" role="img" aria-labelledby="rotation-svg-title rotation-svg-desc">
-    <title id="rotation-svg-title">Coordinate grid for rotating a polygon</title>
-    <desc id="rotation-svg-desc">Click an intersection in the central grid to add a vertex or choose the center of rotation. The graph expands as needed to show the rotated image.</desc>
-    <g data-role="grid"></g>
-    <g data-role="axes"></g>
-    <g data-role="guides"></g>
-    <g data-role="shapes"></g>
-  </svg>
-
-  <div class="rotation-angle-control">
-    <div class="rotation-angle-heading">
-      <label for="rotation-angle">Rotation angle</label>
-      <output id="rotation-angle-value" for="rotation-angle" aria-live="polite">0°</output>
-    </div>
-    <input id="rotation-angle" type="range" min="-360" max="360" step="1" value="0" aria-label="Rotation angle in degrees">
-  </div>
-
-  <label class="rotation-distance-toggle" for="show-axis-distances">
-    <input id="show-axis-distances" type="checkbox">
-    Show distances to the x- and y-axes
-  </label>
-
-  <section id="rotation-distance-panel" class="rotation-distance-panel" hidden aria-labelledby="rotation-distance-title">
-    <h3 id="rotation-distance-title">Distances from the axes</h3>
-    <p>Distance to the y-axis is |x|; distance to the x-axis is |y|. The dashed guides show these distances for each original vertex and its image.</p>
-    <div class="rotation-distance-table-wrap">
-      <table class="rotation-distance-table">
-        <thead>
-          <tr>
-            <th scope="col">Vertex</th>
-            <th scope="col">Original: to y-axis</th>
-            <th scope="col">Original: to x-axis</th>
-            <th scope="col">Image: to y-axis</th>
-            <th scope="col">Image: to x-axis</th>
-          </tr>
-        </thead>
-        <tbody id="rotation-distance-values"></tbody>
-      </table>
-    </div>
-    <p class="rotation-distance-note">With the center at the origin, 90° and 270° rotations swap the x- and y-distances, while a 180° rotation keeps them on their respective axes. If the center is elsewhere, distances to the coordinate axes are not generally preserved.</p>
-  </section>
-
-  <div class="rotation-legend" aria-label="Graph legend">
-    <span><i class="rotation-legend-mark original" aria-hidden="true"></i>Original polygon</span>
-    <span><i class="rotation-legend-mark rotated" aria-hidden="true"></i>Rotated image</span>
-  </div>
-
-  <div class="rotation-readout">
-    <h3>Vertex coordinates</h3>
-    <p>Compare each original vertex with its image after rotation.</p>
-    <ol id="rotation-coordinates"></ol>
-  </div>
+<div class="lesson-dashboard" id="lesson-dashboard">
+<div class="lesson-search">
+<label for="lesson-search-input">Search lessons</label>
+<input id="lesson-search-input" type="search" placeholder="Try a title or topic, such as rotations" autocomplete="off" aria-describedby="lesson-search-help">
+<p id="lesson-search-help" class="lesson-search-help">Search by lesson title or mathematics topic.</p>
 </div>
-<script src="rotation-tool.js" defer></script>
-<noscript><p>This interactive tool needs JavaScript enabled in your browser.</p></noscript>
+
+<p id="lesson-search-status" class="lesson-search-status" role="status" aria-live="polite">Showing 2 lessons</p>
+
+<section class="lesson-grid" aria-label="Available lessons">
+<a class="lesson-card" href="rotations.html" data-search="rotations coordinate plane geometry high school transformations">
+<div class="lesson-card-thumbnail">
+<img src="images/lessons/rotation-thumbnail.avif" alt="Circular arrows representing a rotation">
+</div>
+<div class="lesson-card-content">
+<p class="lesson-card-subject">High school geometry</p>
+<h2>Rotations on the Coordinate Plane</h2>
+<div class="lesson-card-dates" aria-label="Lesson dates">
+<p>Created <time datetime="2026-10-18">October 18, 2026</time></p>
+<p>Last modified <time datetime="2026-10-19">October 19, 2026</time></p>
+</div>
+<span class="lesson-card-action">Open lesson <span aria-hidden="true">→</span></span>
+</div>
+</a>
+<a class="lesson-card" href="dilations.html" data-search="dilations coordinate plane geometry high school transformations scale factor">
+<div class="lesson-card-thumbnail">
+<img src="images/lessons/dilation-1.png" alt="Two similar triangles illustrating a dilation from a center">
+</div>
+<div class="lesson-card-content">
+<p class="lesson-card-subject">High school geometry</p>
+<h2>Dilations on the Coordinate Plane</h2>
+<div class="lesson-card-dates" aria-label="Lesson dates">
+<p>Created <time datetime="2026-10-19">October 19, 2026</time></p>
+<p>Last modified <time datetime="2026-10-19">October 19, 2026</time></p>
+</div>
+<span class="lesson-card-action">Open lesson <span aria-hidden="true">→</span></span>
+</div>
+</a>
+</section>
+
+<p id="lesson-search-empty" class="lesson-search-empty" hidden>No lessons match that search. Try another title or topic.</p>
+</div>
+<script src="lessons-dashboard.js" defer></script>
 ```
-
-## What to notice
-
-A rotation turns every point through the same angle about a fixed center. In this tool, you choose the center $(h,k)$. Each vertex stays the same distance from that center, and the polygon keeps its side lengths and angle measures.
-
-For a counterclockwise rotation by θ degrees around $(h,k)$, transform each point using:
-
-**x′ = h + (x − h) cos θ − (y − k) sin θ**  
-**y′ = k + (x − h) sin θ + (y − k) cos θ**
-
-## Explore
-
-1. Plot a triangle, then rotate it by 90°. Compare the original and image coordinates. What pattern do you notice?
-2. Try 180°, −90°, and 270°. Which rotations produce the same image? Explain why.
-3. Rotate your polygon by 360° and −360°. What happens to each vertex?
-4. Predict the image of one vertex before moving the slider, then use the graph to check your prediction.
-
-## Learning goals
-
-- Plot and identify vertices of a polygon on the coordinate plane.
-- Describe and model a rotation by its angle and center.
-- Compare coordinates before and after a rotation and explain how the transformation preserves distance and angle measure.

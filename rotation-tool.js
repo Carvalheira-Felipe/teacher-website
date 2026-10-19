@@ -7,6 +7,8 @@
   const axes = root.querySelector('[data-role="axes"]');
   const shapes = root.querySelector('[data-role="shapes"]');
   const guides = root.querySelector('[data-role="guides"]');
+  const localAxes = root.querySelector('[data-role="local-axes"]');
+  const localGuides = root.querySelector('[data-role="local-guides"]');
   const angleSlider = root.querySelector("#rotation-angle");
   const angleValue = root.querySelector("#rotation-angle-value");
   const xInput = root.querySelector("#vertex-x");
@@ -24,6 +26,10 @@
   const distanceToggle = root.querySelector("#show-axis-distances");
   const distancePanel = root.querySelector("#rotation-distance-panel");
   const distanceValues = root.querySelector("#rotation-distance-values");
+  const localAxesToggle = root.querySelector("#show-local-axes");
+  const localDistancesToggle = root.querySelector("#show-local-distances");
+  const localDistancePanel = root.querySelector("#rotation-local-distance-panel");
+  const localDistanceValues = root.querySelector("#rotation-local-distance-values");
 
   const SVG_NS = "http://www.w3.org/2000/svg";
   const SIZE = 640;
@@ -67,7 +73,8 @@
     const sine = Math.sin(radians);
     return {
       x: about.x + (point.x - about.x) * cosine - (point.y - about.y) * sine,
-      y: about.y + (point.x - about.x) * sine + (point.y - about.y) * cosine
+      y: about.y + (point.x - about.x) * sine + (point.y - about.y) * cosine,
+      name: point.name
     };
   }
 
@@ -200,7 +207,7 @@
         y: screen.y - 8,
         class: `${className}-label`
       });
-      label.textContent = `${pointName(index)}${labelSuffix}`;
+      label.textContent = `${point.name || pointName(index)}${labelSuffix}`;
       shapes.append(label);
     });
   }
@@ -223,10 +230,101 @@
     });
   }
 
+  function drawLocalAxes() {
+    localAxes.replaceChildren();
+    const left = screenPoint({ x: -GRID_EXTENT, y: center.y });
+    const right = screenPoint({ x: GRID_EXTENT, y: center.y });
+    const top = screenPoint({ x: center.x, y: GRID_EXTENT });
+    const bottom = screenPoint({ x: center.x, y: -GRID_EXTENT });
+    localAxes.append(
+      svgElement("line", { x1: left.x, y1: left.y, x2: right.x, y2: right.y, class: "rotation-local-axis" }),
+      svgElement("line", { x1: top.x, y1: top.y, x2: bottom.x, y2: bottom.y, class: "rotation-local-axis" })
+    );
+    const xLabel = createHatLabel("x", right.x - 22, right.y + 20, "end");
+    const yLabel = createHatLabel("y", bottom.x + 10, bottom.y - 9, "start");
+    localAxes.append(xLabel, yLabel);
+  }
+
+  function createHatLabel(letter, x, y, anchor) {
+    const label = svgElement("text", {
+      x,
+      y,
+      class: "rotation-local-axis-label",
+      "text-anchor": anchor
+    });
+    const glyph = svgElement("tspan", { class: "rotation-local-axis-letter" });
+    glyph.textContent = `${letter}\u0302`;
+    label.append(glyph);
+    return label;
+  }
+
+  function drawLocalDistanceGuides(points, className) {
+    points.forEach((point) => {
+      const screen = screenPoint(point);
+      const xAxisFoot = screenPoint({ x: point.x, y: center.y });
+      const yAxisFoot = screenPoint({ x: center.x, y: point.y });
+      localGuides.append(
+        svgElement("line", { x1: screen.x, y1: screen.y, x2: xAxisFoot.x, y2: xAxisFoot.y, class: `rotation-distance-guide local-${className}-distance-guide` }),
+        svgElement("line", { x1: screen.x, y1: screen.y, x2: yAxisFoot.x, y2: yAxisFoot.y, class: `rotation-distance-guide local-${className}-distance-guide` })
+      );
+    });
+  }
+
+  function boundaryOrder(points) {
+    if (points.length < 3) return [...points];
+    const sorted = [...points].sort((a, b) => a.x - b.x || a.y - b.y);
+    const lower = [];
+    const upper = [];
+    sorted.forEach((point) => {
+      while (lower.length >= 2 && cross(lower[lower.length - 2], lower[lower.length - 1], point) < 0) lower.pop();
+      lower.push(point);
+    });
+    [...sorted].reverse().forEach((point) => {
+      while (upper.length >= 2 && cross(upper[upper.length - 2], upper[upper.length - 1], point) < 0) upper.pop();
+      upper.push(point);
+    });
+    const hull = [...lower.slice(0, -1), ...upper.slice(0, -1)];
+    if (hull.length < 3) return [...points];
+    const onSegment = (p, a, b) => cross(a, b, p) === 0 && p.x >= Math.min(a.x, b.x) && p.x <= Math.max(a.x, b.x) && p.y >= Math.min(a.y, b.y) && p.y <= Math.max(a.y, b.y);
+    const allOnBoundary = points.every((point) => hull.some((a, i) => onSegment(point, a, hull[(i + 1) % hull.length])));
+    if (!allOnBoundary) return [...points];
+    const cx = points.reduce((sum, point) => sum + point.x, 0) / points.length;
+    const cy = points.reduce((sum, point) => sum + point.y, 0) / points.length;
+    return [...points].sort((a, b) => Math.atan2(a.y - cy, a.x - cx) - Math.atan2(b.y - cy, b.x - cx));
+  }
+
+  function pointSetIssue(points) {
+    if (new Set(points.map((point) => `${point.x},${point.y}`)).size !== points.length) return "That point matches a vertex already on the graph. Choose a different grid point.";
+    if (points.length < 3) return "";
+    if (!points.slice(2).some((point) => cross(points[0], points[1], point) !== 0)) return "These points lie on one straight line. Add a point that creates a nonzero area.";
+    const hull = [...points].sort((a, b) => a.x - b.x || a.y - b.y);
+    const lower = [];
+    const upper = [];
+    hull.forEach((point) => {
+      while (lower.length >= 2 && cross(lower[lower.length - 2], lower[lower.length - 1], point) <= 0) lower.pop();
+      lower.push(point);
+    });
+    [...hull].reverse().forEach((point) => {
+      while (upper.length >= 2 && cross(upper[upper.length - 2], upper[upper.length - 1], point) <= 0) upper.pop();
+      upper.push(point);
+    });
+    const cornersOnly = [...lower.slice(0, -1), ...upper.slice(0, -1)];
+    const onSegment = (p, a, b) => cross(a, b, p) === 0 && p.x >= Math.min(a.x, b.x) && p.x <= Math.max(a.x, b.x) && p.y >= Math.min(a.y, b.y) && p.y <= Math.max(a.y, b.y);
+    const isOnBoundary = (point) => cornersOnly.some((a, index) => onSegment(point, a, cornersOnly[(index + 1) % cornersOnly.length]));
+    if (!points.every(isOnBoundary)) {
+      const newPointIsInside = !isOnBoundary(points[points.length - 1]);
+      return newPointIsInside
+        ? "That point is inside the polygon boundary, so it cannot be a vertex of this convex shape. Choose a point on or outside the boundary."
+        : "Adding this point would place an earlier point inside the convex boundary. Undo that earlier point, then continue adding the intended boundary vertices.";
+    }
+    return "";
+  }
+
   function render() {
     const angle = Number(angleSlider.value);
-    const rotated = vertices.map((point) => rotatedPoint(point, angle, center));
-    const extentValues = [...vertices, ...rotated, center].flatMap((point) => [Math.abs(point.x), Math.abs(point.y)]);
+    const orderedVertices = boundaryOrder(vertices);
+    const rotated = orderedVertices.map((point) => rotatedPoint(point, angle, center));
+    const extentValues = [...orderedVertices, ...rotated, center].flatMap((point) => [Math.abs(point.x), Math.abs(point.y)]);
     GRID_EXTENT = Math.max(12, Math.ceil((Math.max(0, ...extentValues) + 1) / 4) * 4);
     UNIT = (ORIGIN - 56) / GRID_EXTENT;
     drawGrid();
@@ -234,19 +332,30 @@
     angleValue.textContent = `${angle}°`;
     shapes.replaceChildren();
     guides.replaceChildren();
+    localGuides.replaceChildren();
 
     distancePanel.hidden = !distanceToggle.checked;
     distanceValues.replaceChildren();
     if (distanceToggle.checked) {
-      drawDistanceGuides(vertices, "original");
+      drawDistanceGuides(orderedVertices, "original");
       drawDistanceGuides(rotated, "rotated");
     }
 
-    const closed = vertices.length >= 3;
-    drawShape(vertices, "rotation-original-shape", closed);
+    localAxes.setAttribute("display", localAxesToggle.checked ? "inline" : "none");
+    if (localAxesToggle.checked) drawLocalAxes();
+    else localAxes.replaceChildren();
+    localDistancePanel.hidden = !localDistancesToggle.checked;
+    localDistanceValues.replaceChildren();
+    if (localDistancesToggle.checked) {
+      drawLocalDistanceGuides(orderedVertices, "original");
+      drawLocalDistanceGuides(rotated, "rotated");
+    }
+
+    const closed = orderedVertices.length >= 3;
+    drawShape(orderedVertices, "rotation-original-shape", closed);
     drawShape(rotated, "rotation-rotated-shape", closed);
     drawMarkers(rotated, "rotation-rotated", "′");
-    drawMarkers(vertices, "rotation-original");
+    drawMarkers(orderedVertices, "rotation-original");
     const centerScreen = screenPoint(center);
     shapes.append(
       svgElement("circle", { cx: centerScreen.x, cy: centerScreen.y, r: 8, class: "rotation-center-marker" }),
@@ -259,15 +368,16 @@
     centerValue.textContent = `(${center.x}, ${center.y})`;
 
     coordinateList.replaceChildren();
-    vertices.forEach((point, index) => {
+    orderedVertices.forEach((point, index) => {
       const image = rotated[index];
       const item = document.createElement("li");
-      item.textContent = `${pointName(index)} (${point.x}, ${point.y}) → ${pointName(index)}′ (${formatNumber(image.x)}, ${formatNumber(image.y)})`;
+      const name = point.name || pointName(index);
+      item.textContent = `${name} (${point.x}, ${point.y}) → ${name}′ (${formatNumber(image.x)}, ${formatNumber(image.y)})`;
       coordinateList.append(item);
 
       const row = document.createElement("tr");
       [
-        pointName(index),
+        name,
         formatNumber(Math.abs(point.x)),
         formatNumber(Math.abs(point.y)),
         formatNumber(Math.abs(image.x)),
@@ -278,6 +388,14 @@
         row.append(cell);
       });
       distanceValues.append(row);
+
+      const localRow = document.createElement("tr");
+      [name, formatNumber(point.x - center.x), formatNumber(point.y - center.y), formatNumber(image.x - center.x), formatNumber(image.y - center.y)].forEach((value) => {
+        const cell = document.createElement("td");
+        cell.textContent = value;
+        localRow.append(cell);
+      });
+      localDistanceValues.append(localRow);
     });
 
     undoButton.disabled = vertices.length === 0;
@@ -286,35 +404,6 @@
 
   function cross(a, b, c) {
     return (b.x - a.x) * (c.y - a.y) - (b.y - a.y) * (c.x - a.x);
-  }
-
-  function segmentsIntersect(a, b, c, d) {
-    const abC = cross(a, b, c);
-    const abD = cross(a, b, d);
-    const cdA = cross(c, d, a);
-    const cdB = cross(c, d, b);
-    return abC * abD < 0 && cdA * cdB < 0;
-  }
-
-  function isStrictlyConvex(points) {
-    if (points.length < 3) return true;
-    let turnDirection = 0;
-    for (let i = 0; i < points.length; i += 1) {
-      const turn = cross(points[i], points[(i + 1) % points.length], points[(i + 2) % points.length]);
-      if (turn === 0) return false;
-      const direction = Math.sign(turn);
-      if (turnDirection !== 0 && direction !== turnDirection) return false;
-      turnDirection = direction;
-    }
-    for (let i = 0; i < points.length; i += 1) {
-      const iNext = (i + 1) % points.length;
-      for (let j = i + 1; j < points.length; j += 1) {
-        const jNext = (j + 1) % points.length;
-        if (i === j || iNext === j || jNext === i) continue;
-        if (segmentsIntersect(points[i], points[iNext], points[j], points[jNext])) return false;
-      }
-    }
-    return true;
   }
 
   function setCenter(x, y) {
@@ -336,16 +425,17 @@
       return;
     }
 
-    const candidate = [...vertices, { x, y }];
-    if (candidate.length >= 3 && !isStrictlyConvex(candidate)) {
-      status.textContent = "That point would make the polygon concave, collinear, or self-crossing. Add vertices in order around its boundary.";
+    const candidate = [...vertices, { x, y, name: pointName(vertices.length) }];
+    const issue = pointSetIssue(candidate);
+    if (issue) {
+      status.textContent = issue;
       return;
     }
-    vertices.push({ x, y });
+    vertices.push(candidate[candidate.length - 1]);
     render();
     const name = pointName(vertices.length - 1);
     status.textContent = vertices.length >= 3
-      ? `${name} added at (${x}, ${y}). The ${vertices.length}-vertex convex polygon is ready to rotate about (${center.x}, ${center.y}).`
+      ? `${name} added at (${x}, ${y}). The ${vertices.length}-vertex convex polygon is ready to rotate about (${center.x}, ${center.y}). Points are arranged around the boundary automatically.`
       : `${name} added at (${x}, ${y}). Add ${3 - vertices.length} more point${vertices.length === 1 ? "s" : ""} to create a polygon.`;
   }
 
@@ -392,6 +482,8 @@
 
   angleSlider.addEventListener("input", render);
   distanceToggle.addEventListener("change", render);
+  localAxesToggle.addEventListener("change", render);
+  localDistancesToggle.addEventListener("change", render);
   addButton.addEventListener("click", addFromInputs);
   setCenterButton.addEventListener("click", () => {
     if (centerXInput.value.trim() === "" || centerYInput.value.trim() === "") {

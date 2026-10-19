@@ -15,7 +15,7 @@ My goal is to create meaningful learning experiences that encourage students to 
 
 ```{=html}
 <div class="update-entry">
-  <div class="update-date">OCT 22, 2026</div>
+  <div class="update-date">OCT 18, 2026</div>
   <div class="update-content">
     <strong>First lesson added</strong>
     <p>Published a lesson with resources and activities for students.</p>
@@ -34,13 +34,19 @@ My goal is to create meaningful learning experiences that encourage students to 
 
 ## Teaching Philosophy
 
-I believe students develop a lasting understanding of mathematics when they actively explore ideas and make connections, rather than simply receive answers or memorize procedures. I want students to feel comfortable asking questions, sharing their thinking, making mistakes, and building models as they work toward their own understanding. Visualization, discussion, hands-on activities, and mathematical construction can each offer a different way into an idea.
+I believe students develop a lasting understanding of mathematics when they actively explore ideas, make connections, and construct their own understanding rather than simply memorize procedures or receive answers. Mathematics should be more than finding the correct solution; it should involve understanding why something works, recognizing patterns, asking questions, and thinking critically. I want students to see mathematics as a process of exploration and discovery in which their reasoning is just as important as their answers.
 
-My approach also needs to be flexible. I aim to respond to students’ interests, questions, and needs while providing the guidance and structure that keep learning focused. I see reflection as part of that work: revising lessons, improving explanations, addressing misconceptions, and learning from mistakes help me find better ways to support students.
+I also believe learning is most effective when students are actively involved in the educational process. Every student brings different experiences, interests, and ways of thinking into the classroom, and these differences can enrich the learning experience. Through visualization, hands-on activities, mathematical models, and classroom discussions, students can approach concepts from different perspectives and learn from one another. I want to connect mathematics to students' everyday lives and real-world situations so they can recognize its relevance beyond the classroom. By encouraging collaboration, curiosity, and the exchange of ideas, I hope to create an environment where students feel comfortable sharing their thinking, making mistakes, and learning from their experiences.
+
+Finally, I believe education should prepare students not only to understand academic content but also to become independent thinkers who can question assumptions and solve meaningful problems. Learning should encourage students to look beyond memorized rules and develop the confidence to approach unfamiliar situations. I value a flexible learning environment where students have opportunities to explore their interests, express their ideas, and develop their own perspectives. Ultimately, my teaching philosophy is centered on creating meaningful learning experiences that help students develop mathematical understanding, curiosity, and the ability to apply what they learn to the world around them.
 
 ## My Role as a Teacher
 
-My role is to create these connections while providing enough structure and guidance to keep students moving toward meaningful understanding. At the same time, I recognize that effective teaching requires constant reflection. I want to hold myself to high standards by carefully revising my lessons, thinking about the language I use, responding to students' misconceptions, and learning from my mistakes. I believe becoming a better teacher is a continuous process, and through consistency, preparation, and a willingness to learn alongside my students, I hope to create a classroom where students feel confident exploring mathematics and developing their own understanding.
+I see my role as a teacher as a facilitator of learning who guides students as they explore ideas and develop their understanding. Rather than simply providing answers, I want to encourage students to ask questions, explain their reasoning, and discover solutions through exploration. I believe asking thoughtful questions can be just as important as explaining a concept because it encourages students to reflect on their thinking and make connections independently. My responsibility is to create opportunities for students to engage with mathematics actively while providing the guidance and support they need to succeed.
+
+Another important part of my role is recognizing that students have different needs, experiences, and ways of learning. I want to remain flexible in my instruction and adapt my teaching strategies to help students overcome difficulties and develop confidence in their abilities. This means providing clear explanations, using different representations, encouraging collaboration, and addressing misconceptions when they arise. Although I value student independence, I also understand the importance of structure and guidance in the learning process. My goal is to find a balance between allowing students to explore ideas on their own and providing the support they need to develop a deeper understanding of mathematical concepts.
+
+Finally, I believe being a teacher means being a lifelong learner. Teaching requires continuous reflection, patience, and a willingness to recognize when something is not working. I want to evaluate my lessons, learn from my mistakes, listen to student feedback, and improve my instructional strategies over time. I also want to build a classroom environment where students feel respected, supported, and confident enough to take intellectual risks. Ultimately, I see my role as helping students become independent and critical thinkers who understand that mistakes are part of learning and that challenges are opportunities for growth. I want my students to leave my classroom not only with stronger mathematical skills but also with the confidence and curiosity to continue learning beyond school.
 
 ## Explore the portfolio
 

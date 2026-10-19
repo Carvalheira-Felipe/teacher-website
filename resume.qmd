@@ -1,5 +1,5 @@
 ---
-title: "Felipe Monte da Carvalheira Filho"
+title: "Felipe Carvalheira"
 subtitle: "Mathematics | Teaching Portfolio Résumé"
 ---
 
@@ -20,7 +20,7 @@ I am a mathematics student preparing for a career in education, with tutoring ex
 ::: resume-card
 ### University of Florida
 
-**Bachelor of Science in Mathematics**, minor in Statistics\
+**Bachelor of Science in Mathematics**, minor in Statistics and Education\
 August 2024–Present · Gainesville, Florida
 :::
 

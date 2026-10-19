@@ -1,0 +1,133 @@
+---
+title: "Dilations on the Coordinate Plane"
+subtitle: "An interactive high-school geometry lesson"
+---
+
+In this lesson, build a convex polygon, choose a center of dilation, and explore how the scale factor changes the figure. Positive, fractional, zero, and negative values of \(k\) show how a dilation can enlarge, reduce, collapse, or reverse a figure through its center.
+
+## Interactive dilation tool
+
+Click grid intersections to add vertices of a convex polygon. After the third point, the tool arranges accepted vertices around the boundary automatically. Duplicate points and points inside the boundary are not added. Choose the center of dilation on the grid or enter its coordinates.
+
+```{=html}
+<div id="dilation-tool" class="rotation-tool dilation-tool" role="group" aria-label="Polygon dilation tool">
+<fieldset class="rotation-center-controls">
+<legend>Center of dilation</legend>
+<label for="dilation-center-x">x</label>
+<input id="dilation-center-x" type="number" min="-8" max="8" step="1" value="0">
+<label for="dilation-center-y">y</label>
+<input id="dilation-center-y" type="number" min="-8" max="8" step="1" value="0">
+<button id="dilation-set-center" type="button" class="btn btn-outline-secondary">Set center</button>
+<button id="dilation-choose-center" type="button" class="btn btn-outline-secondary" aria-pressed="false">Choose center on grid</button>
+<span class="rotation-current-center">Current center: <output id="dilation-center-value">(0, 0)</output></span>
+</fieldset>
+
+<div class="rotation-point-controls">
+<p class="rotation-instruction">Add polygon vertices, or enter integer coordinates. Accepted points are arranged around the boundary:</p>
+<label for="dilation-vertex-x">x</label>
+<input id="dilation-vertex-x" type="number" min="-8" max="8" step="1" value="1">
+<label for="dilation-vertex-y">y</label>
+<input id="dilation-vertex-y" type="number" min="-8" max="8" step="1" value="1">
+<button id="dilation-add-vertex" type="button" class="btn btn-outline-secondary">Add point</button>
+<button id="dilation-undo-vertex" type="button" class="btn btn-outline-secondary" disabled>Undo last point</button>
+<button id="dilation-clear-vertices" type="button" class="btn btn-outline-secondary" disabled>Clear shape</button>
+</div>
+
+<p id="dilation-status" class="rotation-status" aria-live="polite">Add at least three vertices to create a convex polygon. Original vertices and the center can be placed from −8 to 8 on each axis.</p>
+
+<svg class="rotation-canvas" viewBox="0 0 640 640" role="img" aria-labelledby="dilation-svg-title dilation-svg-desc">
+<title id="dilation-svg-title">Coordinate grid for dilating a polygon</title>
+<desc id="dilation-svg-desc">Click an intersection in the central grid to add a vertex or choose the center of dilation. The graph expands as needed to show the dilated image.</desc>
+<g data-role="grid"></g>
+<g data-role="axes"></g>
+<g data-role="local-axes" display="none"></g>
+<g data-role="guides"></g>
+<g data-role="local-guides"></g>
+<g data-role="shapes"></g>
+</svg>
+
+<div class="rotation-angle-control dilation-scale-control">
+<div class="rotation-angle-heading">
+<label for="dilation-scale">Dilation coefficient \(k\)</label>
+<output id="dilation-scale-value" for="dilation-scale" aria-live="polite">2</output>
+</div>
+<input id="dilation-scale" type="range" min="-10" max="10" step="0.1" value="2" aria-label="Dilation coefficient k from negative ten to ten">
+</div>
+
+<label class="rotation-distance-toggle" for="dilation-show-axis-distances">
+<input id="dilation-show-axis-distances" type="checkbox">
+Show distances to the original x- and y-axes
+</label>
+<section id="dilation-distance-panel" class="rotation-distance-panel" hidden aria-labelledby="dilation-distance-title">
+<h3 id="dilation-distance-title">Distances from the original axes</h3>
+<p>These measurements are |x| and |y| from the original coordinate axes. When the center is not the origin, they do not generally scale by the same factor as the distances from the center.</p>
+<div class="rotation-distance-table-wrap">
+<table class="rotation-distance-table">
+<thead><tr><th scope="col">Vertex</th><th scope="col">Original: |x|</th><th scope="col">Original: |y|</th><th scope="col">Image: |x′|</th><th scope="col">Image: |y′|</th></tr></thead>
+<tbody id="dilation-distance-values"></tbody>
+</table>
+</div>
+</section>
+
+<label class="rotation-distance-toggle" for="dilation-show-local-axes">
+<input id="dilation-show-local-axes" type="checkbox">
+Show x̂ and ŷ axes through the center
+</label>
+<label class="rotation-distance-toggle" for="dilation-show-local-distances">
+<input id="dilation-show-local-distances" type="checkbox">
+Show x̂ and ŷ distances
+</label>
+<section id="dilation-local-distance-panel" class="rotation-distance-panel" hidden aria-labelledby="dilation-local-distance-title">
+<h3 id="dilation-local-distance-title">Coordinates relative to the center</h3>
+<p>The x̂ and ŷ axes pass through the center and stay parallel to the original axes. The signed components show how far each point is from the center along those directions.</p>
+<div class="rotation-distance-table-wrap">
+<table class="rotation-distance-table">
+<thead><tr><th scope="col">Vertex</th><th scope="col">Original Δx̂</th><th scope="col">Original Δŷ</th><th scope="col">Image Δx̂</th><th scope="col">Image Δŷ</th></tr></thead>
+<tbody id="dilation-local-distance-values"></tbody>
+</table>
+</div>
+<p class="rotation-distance-note">For a dilation, each signed center-relative component is multiplied by \(k\). The distance along an axis is the absolute value of that component.</p>
+</section>
+
+<div class="rotation-legend" aria-label="Graph legend">
+<span><i class="rotation-legend-mark original" aria-hidden="true"></i>Original polygon</span>
+<span><i class="rotation-legend-mark rotated" aria-hidden="true"></i>Dilated image</span>
+</div>
+
+<div class="rotation-readout">
+<h3>Vertex coordinates</h3>
+<p>Compare each original vertex with its image as the coefficient and center change.</p>
+<ol id="dilation-coordinates"></ol>
+</div>
+</div>
+<script src="dilation-tool.js" defer></script>
+<noscript><p>This interactive tool needs JavaScript enabled in your browser.</p></noscript>
+```
+
+## What to notice
+
+For a point \(P=(x,y)\) and a center of dilation \(C=(a,b)\), the image is
+
+\[
+P'=C+k(P-C),\qquad x'=a+k(x-a),\qquad y'=b+k(y-b).
+\]
+
+- If \(k>1\), the image is enlarged and lies farther from the center.
+- If \(0<k<1\), the image is reduced and remains on the same side of the center.
+- If \(k=1\), the image matches the original polygon.
+- If \(k=0\), every vertex maps to the center.
+- If \(k<0\), the image lies on the opposite side of the center, with size determined by \(|k|\).
+
+## Explore
+
+1.  Build a triangle and compare its image for \(k=2\), \(k=0.5\), and \(k=1\). How does the distance from the center change?
+2.  Try \(k=0\). Where do all the image vertices go?
+3.  Try \(k=-1\), then \(k=-2\). How does a negative coefficient change the side of the center on which the image lies?
+4.  Move the center away from the origin. Predict one image vertex, then use the graph to check your calculation.
+
+## Learning goals
+
+- Identify the center and scale factor of a dilation.
+- Calculate image coordinates using a center other than the origin.
+- Describe how positive, fractional, zero, and negative scale factors affect a figure.
+- Compare a polygon with its image and explain which distances change by the scale factor.
