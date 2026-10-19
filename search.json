@@ -21,125 +21,6 @@
     "text": "Organizing resources\nAs the collection grows, group entries by topic, grade level, or purpose. Check that shared links work and that any files are appropriate to publish publicly."
   },
   {
-    "objectID": "lessons.html",
-    "href": "lessons.html",
-    "title": "Rotations on the Coordinate Plane",
-    "section": "",
-    "text": "In this lesson, you will build a convex polygon on a coordinate grid, choose its center of rotation, and explore how each vertex moves as you adjust the angle from −360° to 360°."
-  },
-  {
-    "objectID": "lessons.html#interactive-rotation-tool",
-    "href": "lessons.html#interactive-rotation-tool",
-    "title": "Rotations on the Coordinate Plane",
-    "section": "Interactive rotation tool",
-    "text": "Interactive rotation tool\nClick grid intersections to add vertices in order around the polygon’s boundary. After the third point, the polygon closes automatically. Points that would make it concave or self-crossing are not added. Choose the rotation center on the grid or enter its coordinates.\n\n  \n    Center of rotation\n    x\n    \n    y\n    \n    Set center\n    Choose center on grid\n    Current center: (0, 0)\n  \n\n  \n    Add polygon vertices in boundary order, or enter integer coordinates:\n    x\n    \n    y\n    \n    Add point\n    Undo last point\n    Clear shape\n  \n\n  Add at least three vertices to create a convex polygon. Original vertices and the center can be placed from −8 to 8 on each axis.\n\n  \n    Coordinate grid for rotating a polygon\n    Click an intersection in the central grid to add a vertex or choose the center of rotation. The graph expands as needed to show the rotated image.\n    \n    \n    \n    \n  \n\n  \n    \n      Rotation angle\n      0°\n    \n    \n  \n\n  \n    \n    Show distances to the x- and y-axes\n  \n\n  \n    Distances from the axes\n    Distance to the y-axis is |x|; distance to the x-axis is |y|. The dashed guides show these distances for each original vertex and its image.\n    \n      \n\n\n\nVertex\nOriginal: to y-axis\nOriginal: to x-axis\nImage: to y-axis\nImage: to x-axis\n\n\n\n\n\n\n    \n    With the center at the origin, 90° and 270° rotations swap the x- and y-distances, while a 180° rotation keeps them on their respective axes. If the center is elsewhere, distances to the coordinate axes are not generally preserved.\n  \n\n  \n    Original polygon\n    Rotated image\n  \n\n  \n    Vertex coordinates\n    Compare each original vertex with its image after rotation.\n    \n  \n\n\nThis interactive tool needs JavaScript enabled in your browser."
-  },
-  {
-    "objectID": "lessons.html#what-to-notice",
-    "href": "lessons.html#what-to-notice",
-    "title": "Rotations on the Coordinate Plane",
-    "section": "What to notice",
-    "text": "What to notice\nA rotation turns every point through the same angle about a fixed center. In this tool, you choose the center \\((h,k)\\). Each vertex stays the same distance from that center, and the polygon keeps its side lengths and angle measures.\nFor a counterclockwise rotation by θ degrees around \\((h,k)\\), transform each point using:\nx′ = h + (x − h) cos θ − (y − k) sin θ\ny′ = k + (x − h) sin θ + (y − k) cos θ"
-  },
-  {
-    "objectID": "lessons.html#explore",
-    "href": "lessons.html#explore",
-    "title": "Rotations on the Coordinate Plane",
-    "section": "Explore",
-    "text": "Explore\n\nPlot a triangle, then rotate it by 90°. Compare the original and image coordinates. What pattern do you notice?\nTry 180°, −90°, and 270°. Which rotations produce the same image? Explain why.\nRotate your polygon by 360° and −360°. What happens to each vertex?\nPredict the image of one vertex before moving the slider, then use the graph to check your prediction."
-  },
-  {
-    "objectID": "lessons.html#learning-goals",
-    "href": "lessons.html#learning-goals",
-    "title": "Rotations on the Coordinate Plane",
-    "section": "Learning goals",
-    "text": "Learning goals\n\nPlot and identify vertices of a polygon on the coordinate plane.\nDescribe and model a rotation by its angle and center.\nCompare coordinates before and after a rotation and explain how the transformation preserves distance and angle measure."
-  },
-  {
-    "objectID": "resume.html",
-    "href": "resume.html",
-    "title": "Felipe Monte da Carvalheira Filho",
-    "section": "",
-    "text": "Future Mathematics Educator\nMathematics student and tutor focused on helping learners build confidence, make connections, and develop their own understanding.\n\n\n\nI am a mathematics student preparing for a career in education, with tutoring experience in mathematics and physics. My background in mathematics has strengthened my appreciation for the connections between ideas, and I want students to experience mathematics as something they can explore and make sense of. I aim to create supportive learning environments where students feel comfortable asking questions, sharing ideas, and learning from mistakes.\n\n\n\n\n\n\nBachelor of Science in Mathematics, minor in Statistics\nAugust 2024–Present · Gainesville, Florida\n\n\n\nAssociate of Arts in Mathematics\nJanuary 2022–May 2024 · Miami, Florida\nGPA: 3.9 · Dean’s List recipient every semester\n\n\n\n\n\n\n\nGainesville, Florida · November 2024–Present\n\nSupport students in mathematics and physics.\nWork with learners from different age groups and backgrounds, including veterans and high school students.\n\n\n\n\nMiami, Florida · June 2022–July 2024\n\nProvided one-to-one tutoring in algebra, calculus, and statistics.\nHelped students prepare for exams and strengthen their understanding.\nDeveloped customized learning plans based on individual student needs.\n\n\n\n\n\n\n\nJanuary 2023–May 2023 · Miami, Florida\nResearched risks associated with heavy-metal contamination from vaping devices. Compiled and analyzed data using statistical software and presented findings at student research symposiums.\n\n\n\n\n\n\n\n\nMathematics: Mathematics and statistics\nProgramming: Python and R · Skillful\nProductivity tools: Microsoft Word, Excel, Teams, and PowerPoint · Experienced\n\n\n\n\n\nPortuguese: Native\nSpanish: Experienced\nEnglish: Experienced\n\n\n\n\n\n\nAcademic Excellence Award in Algebra, 2024\nAcademic Excellence Award Scholarship Program, 2023 and 2022\nPernambuco Mathematics Olympiad (OPEMAT), Brazil, 2019\nBrazilian Mathematics Olympiad (OBM), gold medal, Brazil, 2018\n\n\n\n\n\nFor professional inquiries, email Felipe."
-  },
-  {
-    "objectID": "resume.html#professional-profile",
-    "href": "resume.html#professional-profile",
-    "title": "Felipe Monte da Carvalheira Filho",
-    "section": "",
-    "text": "I am a mathematics student preparing for a career in education, with tutoring experience in mathematics and physics. My background in mathematics has strengthened my appreciation for the connections between ideas, and I want students to experience mathematics as something they can explore and make sense of. I aim to create supportive learning environments where students feel comfortable asking questions, sharing ideas, and learning from mistakes."
-  },
-  {
-    "objectID": "resume.html#education",
-    "href": "resume.html#education",
-    "title": "Felipe Monte da Carvalheira Filho",
-    "section": "",
-    "text": "Bachelor of Science in Mathematics, minor in Statistics\nAugust 2024–Present · Gainesville, Florida\n\n\n\nAssociate of Arts in Mathematics\nJanuary 2022–May 2024 · Miami, Florida\nGPA: 3.9 · Dean’s List recipient every semester"
-  },
-  {
-    "objectID": "resume.html#teaching-and-professional-experience",
-    "href": "resume.html#teaching-and-professional-experience",
-    "title": "Felipe Monte da Carvalheira Filho",
-    "section": "",
-    "text": "Gainesville, Florida · November 2024–Present\n\nSupport students in mathematics and physics.\nWork with learners from different age groups and backgrounds, including veterans and high school students.\n\n\n\n\nMiami, Florida · June 2022–July 2024\n\nProvided one-to-one tutoring in algebra, calculus, and statistics.\nHelped students prepare for exams and strengthen their understanding.\nDeveloped customized learning plans based on individual student needs."
-  },
-  {
-    "objectID": "resume.html#research-experience",
-    "href": "resume.html#research-experience",
-    "title": "Felipe Monte da Carvalheira Filho",
-    "section": "",
-    "text": "January 2023–May 2023 · Miami, Florida\nResearched risks associated with heavy-metal contamination from vaping devices. Compiled and analyzed data using statistical software and presented findings at student research symposiums."
-  },
-  {
-    "objectID": "resume.html#skills-and-awards",
-    "href": "resume.html#skills-and-awards",
-    "title": "Felipe Monte da Carvalheira Filho",
-    "section": "",
-    "text": "Mathematics: Mathematics and statistics\nProgramming: Python and R · Skillful\nProductivity tools: Microsoft Word, Excel, Teams, and PowerPoint · Experienced\n\n\n\n\n\nPortuguese: Native\nSpanish: Experienced\nEnglish: Experienced\n\n\n\n\n\n\nAcademic Excellence Award in Algebra, 2024\nAcademic Excellence Award Scholarship Program, 2023 and 2022\nPernambuco Mathematics Olympiad (OPEMAT), Brazil, 2019\nBrazilian Mathematics Olympiad (OBM), gold medal, Brazil, 2018"
-  },
-  {
-    "objectID": "resume.html#contact",
-    "href": "resume.html#contact",
-    "title": "Felipe Monte da Carvalheira Filho",
-    "section": "",
-    "text": "For professional inquiries, email Felipe."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome!",
-    "section": "",
-    "text": "Welcome to my teaching website! This is a space where I share my teaching philosophy, educational resources, classroom activities, and reflections on my development as an educator.\nMy goal is to create meaningful learning experiences that encourage students to explore ideas, ask questions, make connections, and develop confidence in their mathematical abilities. I hope this website provides a glimpse into my approach to teaching and my commitment to helping every student learn."
-  },
-  {
-    "objectID": "index.html#whats-new",
-    "href": "index.html#whats-new",
-    "title": "Welcome!",
-    "section": "What’s New?",
-    "text": "What’s New?\n\n  OCT 22, 2026\n  \n    First lesson added\n    Published a lesson with resources and activities for students.\n  \n\n\n\n  OCT 18, 2026\n  \n    Website launched\n    Created the homepage and introduced my teaching philosophy."
-  },
-  {
-    "objectID": "index.html#teaching-philosophy",
-    "href": "index.html#teaching-philosophy",
-    "title": "Welcome!",
-    "section": "Teaching Philosophy",
-    "text": "Teaching Philosophy\nI believe students develop a lasting understanding of mathematics when they actively explore ideas and make connections, rather than simply receive answers or memorize procedures. I want students to feel comfortable asking questions, sharing their thinking, making mistakes, and building models as they work toward their own understanding. Visualization, discussion, hands-on activities, and mathematical construction can each offer a different way into an idea.\nMy approach also needs to be flexible. I aim to respond to students’ interests, questions, and needs while providing the guidance and structure that keep learning focused. I see reflection as part of that work: revising lessons, improving explanations, addressing misconceptions, and learning from mistakes help me find better ways to support students."
-  },
-  {
-    "objectID": "index.html#my-role-as-a-teacher",
-    "href": "index.html#my-role-as-a-teacher",
-    "title": "Welcome!",
-    "section": "My Role as a Teacher",
-    "text": "My Role as a Teacher\nMy role is to create these connections while providing enough structure and guidance to keep students moving toward meaningful understanding. At the same time, I recognize that effective teaching requires constant reflection. I want to hold myself to high standards by carefully revising my lessons, thinking about the language I use, responding to students’ misconceptions, and learning from my mistakes. I believe becoming a better teacher is a continuous process, and through consistency, preparation, and a willingness to learn alongside my students, I hope to create a classroom where students feel confident exploring mathematics and developing their own understanding."
-  },
-  {
-    "objectID": "index.html#explore-the-portfolio",
-    "href": "index.html#explore-the-portfolio",
-    "title": "Welcome!",
-    "section": "Explore the portfolio",
-    "text": "Explore the portfolio\nUse the navigation above to explore my teaching profile, lesson plans, classroom reflections, and educational resources. These sections will grow as I develop and document my practice."
-  },
-  {
     "objectID": "classroom.html",
     "href": "classroom.html",
     "title": "Classroom Practice",
@@ -159,5 +40,166 @@
     "title": "Classroom Practice",
     "section": "A reflective practice",
     "text": "A reflective practice\nUse these notes to identify patterns, revise lessons, and consider how different representations or activities can help students make sense of mathematics."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome!",
+    "section": "",
+    "text": "Welcome to my teaching website! This is a space where I share my teaching philosophy, educational resources, classroom activities, and reflections on my development as an educator.\nMy goal is to create meaningful learning experiences that encourage students to explore ideas, ask questions, make connections, and develop confidence in their mathematical abilities. I hope this website provides a glimpse into my approach to teaching and my commitment to helping every student learn."
+  },
+  {
+    "objectID": "index.html#whats-new",
+    "href": "index.html#whats-new",
+    "title": "Welcome!",
+    "section": "What’s New?",
+    "text": "What’s New?\n\n  OCT 18, 2026\n  \n    First lesson added\n    Published a lesson with resources and activities for students.\n  \n\n\n\n  OCT 18, 2026\n  \n    Website launched\n    Created the homepage and introduced my teaching philosophy."
+  },
+  {
+    "objectID": "index.html#teaching-philosophy",
+    "href": "index.html#teaching-philosophy",
+    "title": "Welcome!",
+    "section": "Teaching Philosophy",
+    "text": "Teaching Philosophy\nI believe students develop a lasting understanding of mathematics when they actively explore ideas, make connections, and construct their own understanding rather than simply memorize procedures or receive answers. Mathematics should be more than finding the correct solution; it should involve understanding why something works, recognizing patterns, asking questions, and thinking critically. I want students to see mathematics as a process of exploration and discovery in which their reasoning is just as important as their answers.\nI also believe learning is most effective when students are actively involved in the educational process. Every student brings different experiences, interests, and ways of thinking into the classroom, and these differences can enrich the learning experience. Through visualization, hands-on activities, mathematical models, and classroom discussions, students can approach concepts from different perspectives and learn from one another. I want to connect mathematics to students’ everyday lives and real-world situations so they can recognize its relevance beyond the classroom. By encouraging collaboration, curiosity, and the exchange of ideas, I hope to create an environment where students feel comfortable sharing their thinking, making mistakes, and learning from their experiences.\nFinally, I believe education should prepare students not only to understand academic content but also to become independent thinkers who can question assumptions and solve meaningful problems. Learning should encourage students to look beyond memorized rules and develop the confidence to approach unfamiliar situations. I value a flexible learning environment where students have opportunities to explore their interests, express their ideas, and develop their own perspectives. Ultimately, my teaching philosophy is centered on creating meaningful learning experiences that help students develop mathematical understanding, curiosity, and the ability to apply what they learn to the world around them."
+  },
+  {
+    "objectID": "index.html#my-role-as-a-teacher",
+    "href": "index.html#my-role-as-a-teacher",
+    "title": "Welcome!",
+    "section": "My Role as a Teacher",
+    "text": "My Role as a Teacher\nI see my role as a teacher as a facilitator of learning who guides students as they explore ideas and develop their understanding. Rather than simply providing answers, I want to encourage students to ask questions, explain their reasoning, and discover solutions through exploration. I believe asking thoughtful questions can be just as important as explaining a concept because it encourages students to reflect on their thinking and make connections independently. My responsibility is to create opportunities for students to engage with mathematics actively while providing the guidance and support they need to succeed.\nAnother important part of my role is recognizing that students have different needs, experiences, and ways of learning. I want to remain flexible in my instruction and adapt my teaching strategies to help students overcome difficulties and develop confidence in their abilities. This means providing clear explanations, using different representations, encouraging collaboration, and addressing misconceptions when they arise. Although I value student independence, I also understand the importance of structure and guidance in the learning process. My goal is to find a balance between allowing students to explore ideas on their own and providing the support they need to develop a deeper understanding of mathematical concepts.\nFinally, I believe being a teacher means being a lifelong learner. Teaching requires continuous reflection, patience, and a willingness to recognize when something is not working. I want to evaluate my lessons, learn from my mistakes, listen to student feedback, and improve my instructional strategies over time. I also want to build a classroom environment where students feel respected, supported, and confident enough to take intellectual risks. Ultimately, I see my role as helping students become independent and critical thinkers who understand that mistakes are part of learning and that challenges are opportunities for growth. I want my students to leave my classroom not only with stronger mathematical skills but also with the confidence and curiosity to continue learning beyond school."
+  },
+  {
+    "objectID": "index.html#explore-the-portfolio",
+    "href": "index.html#explore-the-portfolio",
+    "title": "Welcome!",
+    "section": "Explore the portfolio",
+    "text": "Explore the portfolio\nUse the navigation above to explore my teaching profile, lesson plans, classroom reflections, and educational resources. These sections will grow as I develop and document my practice."
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Felipe Carvalheira",
+    "section": "",
+    "text": "Future Mathematics Educator\nMathematics student and tutor focused on helping learners build confidence, make connections, and develop their own understanding.\n\n\n\nI am a mathematics student preparing for a career in education, with tutoring experience in mathematics and physics. My background in mathematics has strengthened my appreciation for the connections between ideas, and I want students to experience mathematics as something they can explore and make sense of. I aim to create supportive learning environments where students feel comfortable asking questions, sharing ideas, and learning from mistakes.\n\n\n\n\n\n\nBachelor of Science in Mathematics, minor in Statistics and Education\nAugust 2024–Present · Gainesville, Florida\n\n\n\nAssociate of Arts in Mathematics\nJanuary 2022–May 2024 · Miami, Florida\nGPA: 3.9 · Dean’s List recipient every semester\n\n\n\n\n\n\n\nGainesville, Florida · November 2024–Present\n\nSupport students in mathematics and physics.\nWork with learners from different age groups and backgrounds, including veterans and high school students.\n\n\n\n\nMiami, Florida · June 2022–July 2024\n\nProvided one-to-one tutoring in algebra, calculus, and statistics.\nHelped students prepare for exams and strengthen their understanding.\nDeveloped customized learning plans based on individual student needs.\n\n\n\n\n\n\n\nJanuary 2023–May 2023 · Miami, Florida\nResearched risks associated with heavy-metal contamination from vaping devices. Compiled and analyzed data using statistical software and presented findings at student research symposiums.\n\n\n\n\n\n\n\n\nMathematics: Mathematics and statistics\nProgramming: Python and R · Skillful\nProductivity tools: Microsoft Word, Excel, Teams, and PowerPoint · Experienced\n\n\n\n\n\nPortuguese: Native\nSpanish: Experienced\nEnglish: Experienced\n\n\n\n\n\n\nAcademic Excellence Award in Algebra, 2024\nAcademic Excellence Award Scholarship Program, 2023 and 2022\nPernambuco Mathematics Olympiad (OPEMAT), Brazil, 2019\nBrazilian Mathematics Olympiad (OBM), gold medal, Brazil, 2018\n\n\n\n\n\nFor professional inquiries, email Felipe."
+  },
+  {
+    "objectID": "resume.html#professional-profile",
+    "href": "resume.html#professional-profile",
+    "title": "Felipe Carvalheira",
+    "section": "",
+    "text": "I am a mathematics student preparing for a career in education, with tutoring experience in mathematics and physics. My background in mathematics has strengthened my appreciation for the connections between ideas, and I want students to experience mathematics as something they can explore and make sense of. I aim to create supportive learning environments where students feel comfortable asking questions, sharing ideas, and learning from mistakes."
+  },
+  {
+    "objectID": "resume.html#education",
+    "href": "resume.html#education",
+    "title": "Felipe Carvalheira",
+    "section": "",
+    "text": "Bachelor of Science in Mathematics, minor in Statistics and Education\nAugust 2024–Present · Gainesville, Florida\n\n\n\nAssociate of Arts in Mathematics\nJanuary 2022–May 2024 · Miami, Florida\nGPA: 3.9 · Dean’s List recipient every semester"
+  },
+  {
+    "objectID": "resume.html#teaching-and-professional-experience",
+    "href": "resume.html#teaching-and-professional-experience",
+    "title": "Felipe Carvalheira",
+    "section": "",
+    "text": "Gainesville, Florida · November 2024–Present\n\nSupport students in mathematics and physics.\nWork with learners from different age groups and backgrounds, including veterans and high school students.\n\n\n\n\nMiami, Florida · June 2022–July 2024\n\nProvided one-to-one tutoring in algebra, calculus, and statistics.\nHelped students prepare for exams and strengthen their understanding.\nDeveloped customized learning plans based on individual student needs."
+  },
+  {
+    "objectID": "resume.html#research-experience",
+    "href": "resume.html#research-experience",
+    "title": "Felipe Carvalheira",
+    "section": "",
+    "text": "January 2023–May 2023 · Miami, Florida\nResearched risks associated with heavy-metal contamination from vaping devices. Compiled and analyzed data using statistical software and presented findings at student research symposiums."
+  },
+  {
+    "objectID": "resume.html#skills-and-awards",
+    "href": "resume.html#skills-and-awards",
+    "title": "Felipe Carvalheira",
+    "section": "",
+    "text": "Mathematics: Mathematics and statistics\nProgramming: Python and R · Skillful\nProductivity tools: Microsoft Word, Excel, Teams, and PowerPoint · Experienced\n\n\n\n\n\nPortuguese: Native\nSpanish: Experienced\nEnglish: Experienced\n\n\n\n\n\n\nAcademic Excellence Award in Algebra, 2024\nAcademic Excellence Award Scholarship Program, 2023 and 2022\nPernambuco Mathematics Olympiad (OPEMAT), Brazil, 2019\nBrazilian Mathematics Olympiad (OBM), gold medal, Brazil, 2018"
+  },
+  {
+    "objectID": "resume.html#contact",
+    "href": "resume.html#contact",
+    "title": "Felipe Carvalheira",
+    "section": "",
+    "text": "For professional inquiries, email Felipe."
+  },
+  {
+    "objectID": "rotations.html",
+    "href": "rotations.html",
+    "title": "Rotations on the Coordinate Plane",
+    "section": "",
+    "text": "In this lesson, you will build a convex polygon on a coordinate grid, choose its center of rotation, and explore how each vertex moves as you adjust the angle from −360° to 360°."
+  },
+  {
+    "objectID": "rotations.html#interactive-rotation-tool",
+    "href": "rotations.html#interactive-rotation-tool",
+    "title": "Rotations on the Coordinate Plane",
+    "section": "Interactive rotation tool",
+    "text": "Interactive rotation tool\nClick grid intersections to add vertices of a convex polygon. After the third point, the tool arranges accepted vertices around the boundary automatically. Duplicate points and points inside the boundary are not added. Choose the rotation center on the grid or enter its coordinates.\n\n  \n    Center of rotation\n    x\n    \n    y\n    \n    Set center\n    Choose center on grid\n    Current center: (0, 0)\n  \n\n  \n    Add polygon vertices, or enter integer coordinates. Accepted points are arranged around the boundary:\n    x\n    \n    y\n    \n    Add point\n    Undo last point\n    Clear shape\n  \n\n  Add at least three vertices to create a convex polygon. Original vertices and the center can be placed from −8 to 8 on each axis.\n\n  \n    Coordinate grid for rotating a polygon\n    Click an intersection in the central grid to add a vertex or choose the center of rotation. The graph expands as needed to show the rotated image.\n    \n    \n    \n    \n    \n    \n  \n\n  \n    \n      Rotation angle\n      0°\n    \n    \n  \n\n  \n    \n    Show distances to the original x- and y-axes\n  \n\n  \n    Distances from the axes\n    Distance to the y-axis is |x|; distance to the x-axis is |y|. The dashed guides show these distances for each original vertex and its image.\n    \n      \n\n\n\nVertex\nOriginal: to y-axis\nOriginal: to x-axis\nImage: to y-axis\nImage: to x-axis\n\n\n\n\n\n\n    \n    With the center at the origin, 90° and 270° rotations swap the x- and y-distances, while a 180° rotation keeps them on their respective axes. If the center is elsewhere, distances to the coordinate axes are not generally preserved.\n  \n\n  \n    \n    Show x̂ and ŷ axes through the center\n  \n\n  \n    \n    Show x̂ and ŷ distances\n  \n\n  \n    Distances from the center-parallel axes\n    These axes pass through the center and stay parallel to the original axes. Each signed component shows the horizontal or vertical change from the center; its distance is the absolute value.\n    \n      \n\n\n\nVertex\nOriginal horizontal (x̂)\nOriginal vertical (ŷ)\nImage horizontal (x̂)\nImage vertical (ŷ)\n\n\n\n\n\n\n    \n    The components are measured from the rotation center: Δx̂ = x − h and Δŷ = y − k. Dashed guides show the projections onto the center-parallel axes.\n  \n\n  \n    Original polygon\n    Rotated image\n  \n\n  \n    Vertex coordinates\n    Compare each original vertex with its image after rotation.\n    \n  \n\n\nThis interactive tool needs JavaScript enabled in your browser."
+  },
+  {
+    "objectID": "rotations.html#what-to-notice",
+    "href": "rotations.html#what-to-notice",
+    "title": "Rotations on the Coordinate Plane",
+    "section": "What to notice",
+    "text": "What to notice\nA rotation turns every point through the same angle about a fixed center. In this tool, you choose the center \\((h,k)\\). Each vertex stays the same distance from that center, and the polygon keeps its side lengths and angle measures.\nFor a counterclockwise rotation by θ degrees around \\((h,k)\\), transform each point using:\nx′ = h + (x − h) cos θ − (y − k) sin θ\ny′ = k + (x − h) sin θ + (y − k) cos θ"
+  },
+  {
+    "objectID": "rotations.html#explore",
+    "href": "rotations.html#explore",
+    "title": "Rotations on the Coordinate Plane",
+    "section": "Explore",
+    "text": "Explore\n\nPlot a triangle, then rotate it by 90°. Compare the original and image coordinates. What pattern do you notice?\nTry 180°, −90°, and 270°. Which rotations produce the same image? Explain why.\nRotate your polygon by 360° and −360°. What happens to each vertex?\nPredict the image of one vertex before moving the slider, then use the graph to check your prediction."
+  },
+  {
+    "objectID": "rotations.html#learning-goals",
+    "href": "rotations.html#learning-goals",
+    "title": "Rotations on the Coordinate Plane",
+    "section": "Learning goals",
+    "text": "Learning goals\n\nPlot and identify vertices of a polygon on the coordinate plane.\nDescribe and model a rotation by its angle and center.\nCompare coordinates before and after a rotation and explain how the transformation preserves distance and angle measure."
+  },
+  {
+    "objectID": "lessons.html",
+    "href": "lessons.html",
+    "title": "Lessons",
+    "section": "",
+    "text": "Search lessons\n\nSearch by lesson title or mathematics topic.\n\n\nShowing 2 lessons\n\n\n\n\n\n\n\nHigh school geometry\nRotations on the Coordinate Plane\n\nCreated October 18, 2026\nLast modified October 19, 2026\n\nOpen lesson →\n\n\n\n\n\n\n\nHigh school geometry\nDilations on the Coordinate Plane\n\nCreated October 19, 2026\nLast modified October 19, 2026\n\nOpen lesson →\n\n\n\n\nNo lessons match that search. Try another title or topic."
+  },
+  {
+    "objectID": "dilations.html",
+    "href": "dilations.html",
+    "title": "Dilations on the Coordinate Plane",
+    "section": "",
+    "text": "In this lesson, build a convex polygon, choose a center of dilation, and explore how the scale factor changes the figure. Positive, fractional, zero, and negative values of (k) show how a dilation can enlarge, reduce, collapse, or reverse a figure through its center."
+  },
+  {
+    "objectID": "dilations.html#interactive-dilation-tool",
+    "href": "dilations.html#interactive-dilation-tool",
+    "title": "Dilations on the Coordinate Plane",
+    "section": "Interactive dilation tool",
+    "text": "Interactive dilation tool\nClick grid intersections to add vertices of a convex polygon. After the third point, the tool arranges accepted vertices around the boundary automatically. Duplicate points and points inside the boundary are not added. Choose the center of dilation on the grid or enter its coordinates.\n\n\nCenter of dilation\nx\n\ny\n\nSet center\nChoose center on grid\nCurrent center: (0, 0)\n\n\n\nAdd polygon vertices, or enter integer coordinates. Accepted points are arranged around the boundary:\nx\n\ny\n\nAdd point\nUndo last point\nClear shape\n\n\nAdd at least three vertices to create a convex polygon. Original vertices and the center can be placed from −8 to 8 on each axis.\n\n\nCoordinate grid for dilating a polygon\nClick an intersection in the central grid to add a vertex or choose the center of dilation. The graph expands as needed to show the dilated image.\n\n\n\n\n\n\n\n\n\n\nDilation coefficient \\(k\\)\n2\n\n\n\n\n\n\nShow distances to the original x- and y-axes\n\n\nDistances from the original axes\nThese measurements are |x| and |y| from the original coordinate axes. When the center is not the origin, they do not generally scale by the same factor as the distances from the center.\n\n\n\n\n\nVertex\nOriginal: |x|\nOriginal: |y|\nImage: |x′|\nImage: |y′|\n\n\n\n\n\n\n\n\n\n\n\nShow x̂ and ŷ axes through the center\n\n\n\nShow x̂ and ŷ distances\n\n\nCoordinates relative to the center\nThe x̂ and ŷ axes pass through the center and stay parallel to the original axes. The signed components show how far each point is from the center along those directions.\n\n\n\n\n\nVertex\nOriginal Δx̂\nOriginal Δŷ\nImage Δx̂\nImage Δŷ\n\n\n\n\n\n\n\nFor a dilation, each signed center-relative component is multiplied by \\(k\\). The distance along an axis is the absolute value of that component.\n\n\n\nOriginal polygon\nDilated image\n\n\n\nVertex coordinates\nCompare each original vertex with its image as the coefficient and center change.\n\n\n\n\nThis interactive tool needs JavaScript enabled in your browser."
+  },
+  {
+    "objectID": "dilations.html#what-to-notice",
+    "href": "dilations.html#what-to-notice",
+    "title": "Dilations on the Coordinate Plane",
+    "section": "What to notice",
+    "text": "What to notice\nFor a point (P=(x,y)) and a center of dilation (C=(a,b)), the image is\n[ P’=C+k(P-C),x’=a+k(x-a),y’=b+k(y-b). ]\n\nIf (k&gt;1), the image is enlarged and lies farther from the center.\nIf (0&lt;k&lt;1), the image is reduced and remains on the same side of the center.\nIf (k=1), the image matches the original polygon.\nIf (k=0), every vertex maps to the center.\nIf (k&lt;0), the image lies on the opposite side of the center, with size determined by (|k|)."
+  },
+  {
+    "objectID": "dilations.html#explore",
+    "href": "dilations.html#explore",
+    "title": "Dilations on the Coordinate Plane",
+    "section": "Explore",
+    "text": "Explore\n\nBuild a triangle and compare its image for (k=2), (k=0.5), and (k=1). How does the distance from the center change?\nTry (k=0). Where do all the image vertices go?\nTry (k=-1), then (k=-2). How does a negative coefficient change the side of the center on which the image lies?\nMove the center away from the origin. Predict one image vertex, then use the graph to check your calculation."
+  },
+  {
+    "objectID": "dilations.html#learning-goals",
+    "href": "dilations.html#learning-goals",
+    "title": "Dilations on the Coordinate Plane",
+    "section": "Learning goals",
+    "text": "Learning goals\n\nIdentify the center and scale factor of a dilation.\nCalculate image coordinates using a center other than the origin.\nDescribe how positive, fractional, zero, and negative scale factors affect a figure.\nCompare a polygon with its image and explain which distances change by the scale factor."
   }
 ]
