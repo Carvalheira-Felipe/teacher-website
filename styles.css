@@ -501,6 +501,115 @@ a:hover {
   font-weight: 650;
 }
 
+.about-link-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.about-link-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: clamp(1.15rem, 2.5vw, 1.6rem);
+  border: 1px solid var(--portfolio-line);
+  border-top: 4px solid var(--portfolio-teal);
+  border-radius: 0.85rem;
+  background: var(--portfolio-paper);
+}
+
+.about-link-card h3 {
+  margin: 0 0 0.5rem;
+  color: var(--portfolio-ink);
+  font-size: 1.2rem;
+}
+
+.about-link-card p {
+  margin-bottom: 0.75rem;
+  color: var(--portfolio-muted);
+}
+
+.about-link-card p:last-child {
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+.about-link-card a,
+.about-link-card a:visited {
+  color: var(--portfolio-blue);
+  font-weight: 700;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.about-link-card a:focus-visible,
+.about-link-card a:hover {
+  color: var(--portfolio-blue-dark);
+}
+
+.cover-letter {
+  max-width: 780px;
+  margin: 0 auto 1.75rem;
+  padding: clamp(1.5rem, 5vw, 3.5rem);
+  border: 1px solid var(--portfolio-line);
+  border-radius: 0.9rem;
+  background: var(--portfolio-white);
+  box-shadow: 0 12px 32px rgb(23 43 58 / 6%);
+  font-size: 1.04rem;
+  line-height: 1.85;
+}
+
+.cover-letter p {
+  margin-bottom: 1.25rem;
+}
+
+.cover-letter p:last-child {
+  margin-bottom: 0;
+}
+
+.academic-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.academic-term {
+  min-width: 0;
+  padding: 1.2rem 1.35rem;
+  border: 1px solid var(--portfolio-line);
+  border-left: 4px solid var(--portfolio-teal);
+  border-radius: 0.8rem;
+  background: var(--portfolio-paper);
+}
+
+.academic-term h2 {
+  margin: 0 0 0.75rem;
+  color: var(--portfolio-blue-dark);
+  font-size: 1.2rem;
+}
+
+.academic-term ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.academic-term li + li {
+  margin-top: 0.35rem;
+}
+
+.academic-term strong {
+  white-space: nowrap;
+  color: var(--portfolio-ink);
+  font-variant-numeric: tabular-nums;
+}
+
+.cover-letter + p > a,
+.academic-grid + p > a {
+  font-weight: 700;
+}
+
 /* Coordinate-plane rotation activity */
 .rotation-tool {
   max-width: 850px;
@@ -929,6 +1038,11 @@ a:hover {
   }
 
   .resume-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-link-grid,
+  .academic-grid {
     grid-template-columns: 1fr;
   }
 
