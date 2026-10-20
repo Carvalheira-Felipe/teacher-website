@@ -1,0 +1,130 @@
+---
+title: "Academic Summary"
+subtitle: "Coursework by semester"
+---
+
+:::: {.academic-grid}
+
+::: {.academic-term}
+## Spring 2022
+
+- **SLS 1116** — First Year Experience Seminar
+- **MAC 1105** — College Algebra
+- **ENC 1101** — English Composition 1
+- **CLP 1006** — Psychology of Personal Effectiveness
+- **CGS 1060** — Intro to Computer Technology
+:::
+
+::: {.academic-term}
+## Summer 2022
+
+- **ENC 1102** — English Composition
+- **HUM 1020** — Intro to Humanities
+:::
+
+::: {.academic-term}
+## Fall 2022
+
+- **CHM 1025** — Intro to Chemistry
+- **MAC 1147** — Pre-Calculus and Trigonometry
+- **PHI 2604** — Critical Thinking and Ethics
+- **SPC 1017** — Intro to Communication
+:::
+
+::: {.academic-term}
+## Spring 2023
+
+- **STA 2023** — Intro to Statistics
+- **MAC 2311** — Calculus 1
+- **CHM 1045** — General Chemistry 1
+:::
+
+::: {.academic-term}
+## Summer 2023
+
+- **BSC 2010** — Principles of Biology 1
+- **BSC 2010L** — Principles of Biology 1 Lab
+:::
+
+::: {.academic-term}
+## Fall 2023
+
+- **MAC 2312** — Calculus 2
+- **MAD 2104** — Discrete Mathematics
+- **PHY 1025** — Intro to Physics
+:::
+
+::: {.academic-term}
+## Spring 2024
+
+- **MAC 2313** — Calculus 3
+- **MAP 2302** — Intro to Differential Equations
+:::
+
+::: {.academic-term}
+## Summer 2024
+
+- **POS 2041** — American Federal Government
+:::
+
+::: {.academic-term}
+## Fall 2024
+
+- **ANT 3164** — The Inca and Their Ancestors
+- **MAA 4402** — Intro to Complex Variables
+- **MHF 3202** — Sets and Logic
+- **STA 4321** — Intro to Probability Theory
+:::
+
+::: {.academic-term}
+## Spring 2025
+
+- **MAD 4204** — Intro to Combinatorics 2
+- **MAS 4105** — Linear Algebra
+- **STA 3024** — Statistics 2
+- **WIS 2040** — Wildlife Issues
+:::
+
+::: {.academic-term}
+## Summer 2025
+
+- **MAS 4301** — Abstract Algebra 1
+- **MAS 4203** — Intro to Number Theory
+:::
+
+::: {.academic-term}
+## Fall 2025
+
+- **MAD 4203** — Intro to Combinatorics 1
+- **STA 3100** — Intro to R
+- **STA 4322** — Statistical Theory
+:::
+
+::: {.academic-term}
+## Spring 2026
+
+- **MAE 2364** — Explorations in STEAM Teaching
+- **MTG 3212** — Geometry
+- **STM 3100** — Knowing and Learning in Mathematics and Science
+- **STA 4210** — Regression Analysis
+:::
+
+::: {.academic-term}
+## Summer 2026
+
+- **MAP 4305** — Differential Equations for Engineering
+- **TSL 3323** — Reading for Teachers
+:::
+
+::: {.academic-term}
+## Fall 2026
+
+- **MAA 4102** — Intro to Real Analysis 1
+- **MAT 3503** — Functions and Modeling
+- **STA 4211** — Design of Experiments
+- **SMT 3664** — PBI
+:::
+
+::::
+
+[← Back to About](resume.qmd)

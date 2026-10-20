@@ -94,6 +94,24 @@ Researched risks associated with heavy-metal contamination from vaping devices. 
 - Brazilian Mathematics Olympiad (OBM), gold medal, Brazil, 2018
 :::
 
+:::: {.about-link-grid}
+::: {.about-link-card}
+### Cover Letter
+
+Read my letter of interest for a mathematics teaching position.
+
+[View cover letter →](cover-letter.qmd)
+:::
+
+::: {.about-link-card}
+### Academic Summary
+
+Explore my coursework by semester, including mathematics, statistics, and education.
+
+[View academic summary →](academic-summary.qmd)
+:::
+::::
+
 ## Contact
 
 For professional inquiries, [email Felipe](mailto:felipemontefilho@hotmail.com).

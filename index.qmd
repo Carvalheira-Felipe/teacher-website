@@ -15,6 +15,14 @@ My goal is to create meaningful learning experiences that encourage students to 
 
 ```{=html}
 <div class="update-entry">
+  <div class="update-date">OCT 20, 2026</div>
+  <div class="update-content">
+    <strong>Cover letter and academic summary added</strong>
+    <p>Added dedicated Cover Letter and Academic Summary pages, linked from the About page.</p>
+  </div>
+</div>
+
+<div class="update-entry">
   <div class="update-date">OCT 19, 2026</div>
   <div class="update-content">
     <strong>Lesson 2 added</strong>

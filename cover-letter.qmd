@@ -1,0 +1,26 @@
+---
+title: "Cover Letter"
+subtitle: "Mathematics teaching position"
+---
+
+::: {.cover-letter}
+
+Dear Hiring Committee,
+
+I am writing to express my interest in a mathematics teaching position at your school. As a mathematics student preparing for a career in education, I am excited by the opportunity to help students develop not only mathematical skills, but also the confidence and curiosity to explore mathematics for themselves. My experiences in the classroom have strengthened my desire to become an educator who creates an environment where students feel comfortable asking questions, making mistakes, and developing their own understanding.
+
+My teaching philosophy is centered on exploration, connection, and active learning. I believe students learn best when they are given opportunities to construct their understanding rather than simply receive answers. In my field experiences, I have worked to create lessons that allow students to share ideas, build models, ask questions, and connect concepts in different ways. These experiences have also taught me that effective teaching requires flexibility. Every classroom is different, and I have learned to adapt my approach based on students' interests, questions, and needs while still maintaining the structure necessary to achieve the goals of a lesson.
+
+My background in mathematics has given me a strong appreciation for the connections between mathematical ideas, and I hope to bring that perspective into my teaching. I want my students to see mathematics as something they can explore and make sense of rather than simply a collection of procedures to memorize. At the same time, I understand that becoming an effective teacher requires continuous reflection. I actively seek opportunities to revise my lessons, improve my explanations, learn from mistakes, and develop better ways to engage students.
+
+I would be grateful for the opportunity to contribute to your school community and continue developing as an educator. I am particularly interested in working in a school environment that values student exploration, collaboration, and meaningful learning. I believe my passion for mathematics, willingness to learn, and commitment to improving my teaching would allow me to make a positive contribution to your students and school.
+
+Thank you for considering my application. I would welcome the opportunity to discuss how my background, experiences, and goals align with the needs of your school.
+
+Sincerely,
+
+Felipe Monte da Carvalheira Filho
+
+:::
+
+[← Back to About](resume.qmd)
